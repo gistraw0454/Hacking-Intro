@@ -7,7 +7,7 @@
 ### 🎯 진행 방법
 - 책을 읽으며 repository에 정리한다.
 
-### 🐣 [Chapter 1: 맛보기](https://github.com/saseungmin/summary_of_technical_books/tree/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%201)
+### 🐣 [Chapter 1: 맛보기](https://github.com/gistraw0454/Hacking-Intro/tree/main/Chapter%201)
     1.1 개요
     1.2 해커의 정확한 의미
     1.3 해킹 입문 시 가장 중요한 것
@@ -25,7 +25,7 @@
     1.7.2 이벤트
     1.8 마치며
 
-### 🐣 [Chapter 2: 웹해킹](https://github.com/saseungmin/summary_of_technical_books/tree/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%202)
+### 🐣 [Chapter 2: 웹해킹](https://github.com/gistraw0454/Hacking-Intro/tree/main/Chapter%202)
     2.1 개요
     2.2 사례
     2.3 환경 구축
@@ -54,7 +54,7 @@
     2.8 웹 해킹 음미하기
     2.9 마치며
 
-### 🐣 [Chapter 3: 리버스 엔지니어링](https://github.com/saseungmin/summary_of_technical_books/tree/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%203)
+### 🐣 [Chapter 3: 리버스 엔지니어링](https://github.com/gistraw0454/Hacking-Intro/tree/main/Chapter%203)
     3.1 개요
     3.2 사례
     3.2.1 컴퓨터 원리와 구조 이해
@@ -99,7 +99,7 @@
     3.9 리버스 엔지니어링 음미하기
     3.10 마치며
 
-### 🐣 [Chapter 4: 시스템 해킹](https://github.com/saseungmin/summary_of_technical_books/tree/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%204)
+### 🐣 [Chapter 4: 시스템 해킹](https://github.com/gistraw0454/Hacking-Intro/tree/main/Chapter%204)
     4.1 개요
     4.2 사례
     4.3 시스템 해킹 기법의 목표
@@ -125,7 +125,7 @@
     4.9 시스템 해킹 음미하기
     4.10 마치며
 
-### 🐣 [Chapter 5: 버그 헌팅](https://github.com/saseungmin/summary_of_technical_books/tree/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%204)
+### 🐣 [Chapter 5: 버그 헌팅](https://github.com/gistraw0454/Hacking-Intro/tree/main/Chapter%205)
     5.1 개요
     5.2 취약점을 찾는 방법
     5.2.1 소스 코드 감사
@@ -144,7 +144,7 @@
     5.6.2 한글 원격 코드 실행 취약점
     5.7 버그 헌팅 음미하기
     5.8 마치며
-### 🐣 [Chapter 6: 디지털 포렌식](https://github.com/saseungmin/summary_of_technical_books/tree/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%204)
+### 🐣 [Chapter 6: 디지털 포렌식](https://github.com/gistraw0454/Hacking-Intro/tree/main/Chapter%206)
     6.1 개요
     6.2 사례
     6.3 환경 구축
@@ -165,7 +165,7 @@
     6.7.2 국제 해킹대회 포렌식 문제
     6.8 디지털 포렌식 음미하기
     6.9 마치며
-### 🐣 [Chapter 7: 취약점 마켓](https://github.com/saseungmin/summary_of_technical_books/tree/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%204)
+### 🐣 [Chapter 7: 취약점 마켓](https://github.com/gistraw0454/Hacking-Intro/tree/main/Chapter%207)
     7.1 개요
     7.2 사례
     7.3 환경 구축
@@ -180,7 +180,7 @@
     7.5.5 마이크로소프트
     7.5.6 국가기관
     7.6 마치며
-### 🐣 [Chapter 8: 해킹 마켓](https://github.com/saseungmin/summary_of_technical_books/tree/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%204)
+### 🐣 [Chapter 8: 해킹 마켓](https://github.com/gistraw0454/Hacking-Intro/tree/main/Chapter%208)
     8.1 개요
     8.2 블랙마켓
     8.2.1 구조
