@@ -1,6 +1,15 @@
 ## 🌈 Chapter 1: 맛보기
 [참고 깃헙](https://github.com/saseungmin/summary_of_technical_books/blob/main/summarize_books_in_markdown/%EC%97%98%EB%A0%88%EA%B0%95%ED%8A%B8%20%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/Chapter%201/README.md)
-
+🌈 - 웹 쉘 (Web Shell) 공격
+📌 - 중요한 포인트, 취약점
+🔑 - 인증, 암호화 관련 취약점
+🌐 - 웹 기반 서비스, 웹 애플리케이션
+📄 - 문서, 설정 파일
+🔍 - 정보 수집, 탐색
+🛡️ - 보안, 방어 메커니즘
+⚠️ - 경고, 보안 위협
+📂 - 파일 시스템, 디렉토리
+💻 - 컴퓨터 시스템
 
 ```java
 if (price < 100) {
