@@ -1,2 +1,4 @@
 *.cpp linguist-language=cpp
 *.c linguist-language=C
+demo/** linguist-documentation=false
+demo/** linguist-vendored=false
