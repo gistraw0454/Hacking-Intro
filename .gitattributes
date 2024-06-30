@@ -1,6 +1,0 @@
-*.cpp linguist-language=cpp
-*.c linguist-language=C
-Chapter 3/** linguist-documentation=false
-Chapter 3/** linguist-vendored=false
-*.cpp linguist-detectable=true
-*.C linguist-detectable=true
