@@ -6,3 +6,4 @@ Chapter 3/code/* linguist-documentation=false
 Chapter 3/code/* linguist-vendored=false
 *.cpp linguist-detectable=true
 *.C linguist-detectable=true
+*.php linguist-detectable=false
