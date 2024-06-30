@@ -460,6 +460,7 @@ ex)
 
 SQL Injection
 DBMS 공부하고 다시 오겠다.
+https://panwoo1.github.io/%EB%AA%A8%EA%B0%81%EC%BD%94/WebHaknigLecture-5/
 #### 공격
 #### 방어기법
  
