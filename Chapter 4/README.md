@@ -315,12 +315,175 @@ int를 문자열처럼 사용하는 경우일뿐. 개발자가 처음 프로그램의 구조를 설계할 때는 
 - ex) C언어에서 사용하는 데이터 타입은 기계어로 표현할 수 없는 추상적 개념이다. `배열길이, int, char, double 같은 데이터 타입 역시 기계어로 표현 불가.` 다만 명령어의 인자로 간접적으로 유추가능. 
 
 #### 버퍼 오버플로우 공격
+- 프로그래머가 사용하려고 할당한 메모리보다 더 많은 양의 메모리를 덮어쓸 때 발생
+1. 버퍼오버플로우가 발생하는 메모리 영역을 기준으로 분류.
+2. 취약한 코드 패턴에 따른 분류.
+- 인접한 메모리 영역 덮어쓰기
+- 오브 바이 원 버그 
+    - 오프 바이원 : 1차이로 인해 오동작하는 논리 오류
+    - 연산 수행하는 반복문 구조에서 횟수를 지정할때 자주 발생.
+    - 1byte만 덮어쓸 수 있으면 뭘 할수있을까?
 
+        ```c
+        //예제 4-9 ) 1바이트 오버플로우에 취약한 예제
+        #include <stdio.h>
+        #include <string.h>
 
+        const int kBufSize = 128;
+
+        void off_by_one1(char* in_buf){
+            char out_buf[128]="";
+            int in_buf_len=strlen(in_buf);
+            for (int i=0; i<=in_buf_len;i++){
+                out_buf[i]=in_buf[i];   //out_buf가 strlen(in_buf)+null포함 최대 129자 까지 가능
+                // 하지만, strlen(in_buf)길이가 128로 정해져있으므로, in_buf크기가 128을 넘으면 overflow 발생
+            }
+        }
+
+        void off_by_one2(char* in_buf){
+            char out_buf[128]="";
+            int in_buf_len=strlen(in_buf);
+
+            if(in_buf_len<=kBufSize){
+                strcpy(out_buf,in_buf); //in_buf가 128byte면, strcpy가 널까지 포함하여 129byte를 in_buf에 보내 overflow 발생
+            }
+            printf("%s\n",out_buf);
+        }
+
+        int main(int argc, int* argv[]){
+            off_by_one1(argv[1]);
+        }
+        ```
+        - **strcpy**는 추가적으로 null까지 포함하여 복사한다.
+        - 컴파일러에서 자동으로 변수사이에 임의의 바이트를 넣는 Padding이라는 개념때문에 자주 발생하는 조건이 필요하지만, 오래된 프로그램이나 컴파일러의 경우 종종 발견 가능.
+- 더블프리 버그
+    - `free()` 함수가 두번 이상 같은 메모리에 호출되었을때  발생
+    - 프로그램 구조가 복잡해 메모리를 어디서 해체해야할지 착각하여 코드 배치를 잘못 했을때 발생
+    - 예외처리의 실수를 악용한 공격자가 의도적인 에러를 유발해 프로그램 버그를 만듦
+    - 같은 주소를 중복해서 free()가되면 버퍼오버플로우 현상 발생가능 (malloc()이 두번 같은 메모리를 리턴할 수 있게 되고, 이를 이용해 공격자가 버퍼 오버플로우 현상을 일으킴)
+    - 한 메모리가 서로 다른 두 스트링으로 사용되는데 한곳에서는 a, 한곳에서는 b로 제한해서 사용한다하자.
+        - => <ins>큰 쪽으로 메모리를 채우고 작은 쪽에서 사용하게하면 상대적 길이차로 버퍼 오버플로우 발생 시킬수 있다.</ins>
+
+        ```c
+        //예제 4-10 ) 더블프리 버그에 취약한 코드
+        #include <stdio.h>
+        int main(){
+            char* ptr= (char*)malloc(SIZE);
+            ...
+            if (abrt){
+            free(ptr); 
+            }
+            ...
+            free(ptr);
+        }
+        ```
+- 스택 영역
+    - CPU가 실행중에 필요한 정보를 저장하는 메모리 영역
+    - 함수인자, 지역변수, 스택프레임 주소, 리턴주소
+
+    ```c
+    //예제 4-11 ) 스택 기반의 오버플로우 취약점이 있는 프로그램
+    #include <stdio.h>
+    #include <string.h>
+
+    const int kBufSize=16;
+
+    int main(int argc, char* argv[]){
+        char buf_one[kBufSize]="hello";
+        char buf_two[kBufSize]="World";
+
+        strcpy(buf_two,argv[1]);
+
+        printf("&buf_one = %p, content = %s\n",&buf_one,buf_one);
+        printf("&buf_two = %p, content = %s\n",&buf_two,buf_two);
+    }
+    ```
+    - buf_two 가 buf_one보다 더 앞쪽 메모리를 차지하므로 16보다 넘는 입력값을 주었을때, buf_two가 덮어지면서 buf_one까지 영향을 준다.
+- 데이터 영역
+    - 프로그래밍시 전역적으로 사용되는 정보를 저장하는 메모리 영역
+    - 전역변수, 정적 변수
+        - 초기화된 변수 영역(데이터영역) 
+            - const 키워드로 선언된 읽기 전용 영역
+            - 읽기/쓰기 같이되는 영역
+            ```
+            ex) char *string ="hello world"; 
+                "hello world" --- 읽기 전용 영역
+                static int a=0; global int i=10; ---읽기/쓰기 영역 
+            ```
+        -  초기화X 변수 영역(BSS영역)
+- 힙 버퍼 오버플로우
+    - 힙: 프로그램 수행시 동적으로 할당하고 해제하면서 사용할 수 있는 메모리 영역
+        - 청크 chunck : 동적으로 메모리 할당 해제시 사용하는 메모리 단위
+    - 인접한 메모리 청크를 서로 덮어쓰는 패턴
+        - 연달아 할당받은 메모리는 서로 인접할 확률이 높으므로, 처음 할당받은 메모리 청크 부분을 덮으면 뒷부분에 해당하는 메모리 청크 부분에 데이터를 쓸 수 있다.
+- **선언 순서에 따른 지역변수의 메모리 배치 순서**
+    ```c
+    //예제 4-12 ) 각 변수의 메모리 주소를 출력하는 프로그램
+    #include <stdio.h>
+    int main(){
+        int buf11, buf12;
+        int buf21, buf22;
+        printf("&buf11 = %p, &buf12 = %p\n",&buf11,&buf12);
+        printf("&buf21 = %p, &buf22 = %p\n",&buf21,&buf22);
+    }
+    ```
+    - buf22 buf21 buf12 buf11 순으로 주소가 정렬되어있음.
+    > 지역변수는 마지막에 선언할수록 앞부분(낮은주소)에 배치된다.
+- **올리디버거 JIT 설정**
+    - JIT : 현재 문제가 발생한 프로세스에 그대로 디버거를 연결해 분석하는 방법
+        - 프로그램이 실행중 예상치 못한 버그로 죽어버리는 경우 원인 분석하는데 사용
+    ![alt text](img/image2.png)
 #### 형식 문자열
+- 형식 문자열 format string : 출력값을 일정한 양식에 맞게 통일시키기 위해 사용하는 규격을 정하는 문자열
+```c
+//예제 4-13 ) 형식 문자열 사용 예제
+#include <stdio.h>
+using namespace std;
 
+const char* name[]={"Jeff Dean","Sanjay Ghemawat","Sebastian Thrun","Larry Page","Sergey Brin"};
+const int score[] ={1968,-1,1967,1973,1973};
+const int num_of_people=sizeof(score)/sizeof(int);
+int main(){
+    printf("%20s %s\n","Name","Brith year");
+    for (int i=0;i<num_of_people;i++) printf("%20s %d\n",name[i],score[i]);
+}
+```
+
+- 포맷스트링 취약점 : 포맷스트링을 사용하는 함수의 입력을 사용자가 임의로 조작할 수 있을때 발생
+
+```c
+//예제 4-14 ) 형식 문자열 취약점이 있는 소스 코드
+#include <stdio.h>
+int main(int argc, char* argv[]){
+    if(argc!=2){
+        fprintf(stderr,"Usage>%s [string]\n",argv[0]);
+    }
+    printf(argv[1]);
+}
+```
+- 첫번째 인자로 주어진 문자열을 그대로 출력하는 프로그램.
+ `./example "%x %x %x %x %x %x"`넣으면 메모리에 있는 어떤 값들을 출력함.
+    - 원래 호출되어야할 모양은 printf("%x %x %x %x %x",v1,v2,v3,v4,v5); 이다.
+    - v1~v5는 스택의 어딘가에 저장이 될 것 이다.( 스택은 함수에 전달할 인자를 저장하는 역할을 함)
+    - 따라서 결과값은 %x에 대응되는 메모리 내용을 출력한다.
 #### 정수 오버플로우/언더플로우 공격
+- 일반적 오버플로우 : `strcpy()`,`memcp()` 등의 경계값을 제대로 체크하지 않은 변수 복수의 문제를 이용한 공격법.
+- 정수 오버플로우 : 연산결과가 저장하려는 데이터 타입이 표현할 수 있는 범위를 벗어나는것
+    - 연산 결과가 데이터타입이 저장할 수 있는 최대값보다 크면 오버플로우, 최소값보다 작으면 언더플로우
+    - 정수형 데이터타입을 사용하는 모든 프로그램은 정수형 오버플로우가 발생 가능
+    ```c
+    //예제 4-15 ) 정수형 오버플로우 발생
+    #include <stdio.h>
+    int main(){
+        int a=1234567890;
+        int b= 1234567890;
+        int c= a+b;
 
+        printf("a   = %d\n",a);
+        printf("b   = %d\n",b);
+        printf("a + b = %d\n",a+b);
+    }
+    ```
 ### 실전
 ---
 #### 크래시 발생시키기
